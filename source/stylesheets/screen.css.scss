@@ -759,6 +759,8 @@ a{
   opacity: 0.8;
 }
 
+//SETS THE  DESIGN FOR THE ENDPOINT VERBS
+
 .get-endpoint {
   font-weight: 800;
   text-align: center;
@@ -803,6 +805,8 @@ a{
   border-radius: 0.25rem;
 }
 
+
+// PUTS THE CODE EXAMPLES IN THE MAIN PANEL
 .highlight+pre {
   position: static;
   float: none;
@@ -812,6 +816,7 @@ a{
   left: 0;
 }
 
+// SETS THE DESIGN OF THE GO BACK BUTTON
 .go-back {
   display: block;
   font-weight: 800;
