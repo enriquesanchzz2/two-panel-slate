@@ -527,7 +527,8 @@ a{
   }
 
   img {
-    max-width: 100%;
+    max-width: 90%;
+    padding: 0 3em;
   }
 
   code {
@@ -559,7 +560,7 @@ a{
     line-height: 1.6;
     color: $aside-notice-text;
     font-size: 14px;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     width: 70%;
 
     &.warning {
@@ -624,6 +625,7 @@ a{
     padding: 1em 28px;
     margin: 0;
     width: $examples-width;
+    border-radius: 1rem;
 
     float:right;
     clear:right;
