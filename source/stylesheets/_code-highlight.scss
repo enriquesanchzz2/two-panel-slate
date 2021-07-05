@@ -1,33 +1,33 @@
 @import 'variables';
 
 .highlight .c {
-  color: $drac-comment !important;
+  color: $code-comment-color !important;
 }
 
 .highlight .nf, .highlight .fm {
-  color: $drac-green !important;
+  color: $code-green !important;
 }
 
 .highlight .no {
-  color: $drac-cyan !important;
+  color: $code-cyan !important;
 }
 
 .highlight .kd, .highlight .kn, .highlight .nb {
-  color: $drac-pink !important;
+  color: $code-pink !important;
 }
 
 .highlight .o {
-  color: $drac-red !important;
+  color: $red !important;
 }
 
 .highlight .nl {
-  color: $drac-white !important;
+  color: $white !important;
 }
 
 .highlight .s1, .highlight .s2 {
-  color: $drac-yellow !important;
+  color: $code-yellow !important;
 }
 
 .highlight .mi {
-  color: $drac-purple !important;
+  color: $code-purple !important;
 }
