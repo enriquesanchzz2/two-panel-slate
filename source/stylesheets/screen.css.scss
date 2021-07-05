@@ -38,7 +38,7 @@ html, body {
 }
 
 a{ 
-  color: $drac-blue;
+  color: $accent-color;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -259,7 +259,7 @@ a{
     display: block;
     margin-top: 5px;
     padding: 10px;
-    background-color: $drac-bg;
+    background-color: $bg-color;
     border-radius: 0 3px 3px 0;
   }
   padding: 0 1.5em 5em 0;
@@ -268,7 +268,7 @@ a{
   top: 0;
   left: 0;
   z-index: 100;
-  color: $drac-bg;
+  color: $bg-color;
   text-decoration: none;
   font-weight: bold;
   line-height: 16px;
@@ -314,7 +314,7 @@ a{
   .lang-selector {
     position: fixed;
     z-index: 50;
-    background: $drac-light-bg;
+    background: $light-bg-color;
     padding: 1em 28px;
   }
 }
@@ -340,13 +340,13 @@ a{
     letter-spacing: 0.5px;
 
     &:active, &:focus {
-      background-color: $drac-blue;
+      background-color: $accent-color;
       color: #ffffff;
       border-radius: 3px;
     }
 
     &.active {
-      background-color: $drac-blue;
+      background-color: $accent-color;
       color: #ffffff;
       border-radius: 3px;
     }
@@ -531,7 +531,7 @@ a{
   }
 
   code {
-    background-color: $drac-white;
+    background-color: $white;
     padding: 3px;
     border-radius: 3px;
     @extend %break-words;
@@ -539,10 +539,10 @@ a{
   }
 
   p code {
-    background-color: $drac-white;
+    background-color: $white;
     padding: 3px 5px;
     border-radius: 3px;
-    color: $drac-red;
+    color: $red;
   }
 
   pre>code {
@@ -551,14 +551,16 @@ a{
   }
 
   aside {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
+    margin-left: 5%;
     background: $aside-notice-bg;
     line-height: 1.6;
     color: $aside-notice-text;
     font-size: 14px;
+    border-radius: 1.5rem;
+    width: 70%;
 
     &.warning {
       background-color: $aside-warning-bg;
@@ -595,7 +597,7 @@ a{
     padding: 2px;
     margin: -3px;
     border-radius: 4px;
-    background: $drac-cyan;
+    background: $code-cyan;
   }
 }
 
@@ -633,7 +635,7 @@ a{
     &>p { margin: 0; }
 
     a {
-      color: #fff;
+      color: $code-cyan;
       text-decoration: none;
       border-bottom: dashed 1px #ccc;
     }
@@ -665,7 +667,7 @@ a{
 
       code {
         text-transform: none;
-        color: $drac-pink;
+        color: $code-pink;
       }
     }
   }
@@ -814,7 +816,7 @@ a{
   display: block;
   font-weight: 800;
   color: #fff;
-  background-color: $drac-blue;
+  background-color: $accent-color;
   width: fit-content;
   padding: 0 0.5em;
   border-radius: 0.25rem;
