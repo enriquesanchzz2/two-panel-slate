@@ -1,0 +1,3133 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Jeeves User Guide</title>
+    <link href="images/dowjones-ddd0b592.png" rel="icon" type="image/png" />
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-fc822896.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-11bd11fa.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-286de3cd.js"></script>
+
+    <script>
+      $(function() { setupCodeCopy(); });
+    </script>
+  </head>
+
+  <body class="index" data-languages="[&quot;json&quot;,&quot;shell&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        <img src="images/navbar-6ad8e2f4.svg" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <div class="image-logo">
+        <img src="images/dowjones-9a03b543.svg" class="logo" alt="" />
+      </div>
+        <div class="lang-selector">
+              <a href="#" data-language-name="json">json</a>
+              <a href="#" data-language-name="shell">shell</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#jeeves" class="toc-h1 toc-link" data-title="Jeeves">Jeeves</a>
+          </li>
+          <li>
+            <a href="#overview" class="toc-h1 toc-link" data-title="Overview">Overview</a>
+          </li>
+          <li>
+            <a href="#home-page" class="toc-h1 toc-link" data-title="Home Page">Home Page</a>
+          </li>
+          <li>
+            <a href="#menu" class="toc-h1 toc-link" data-title="Menu">Menu</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#home" class="toc-h2 toc-link" data-title="Home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#monitor" class="toc-h2 toc-link" data-title="Monitor">Monitor</a>
+                  </li>
+                  <li>
+                    <a href="#user-guide" class="toc-h2 toc-link" data-title="User Guide">User Guide</a>
+                  </li>
+                  <li>
+                    <a href="#version" class="toc-h2 toc-link" data-title="Version">Version</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#projects" class="toc-h1 toc-link" data-title="Projects">Projects</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-project" class="toc-h2 toc-link" data-title="Create a Project">Create a Project</a>
+                  </li>
+                  <li>
+                    <a href="#project-home-page" class="toc-h2 toc-link" data-title="Project Home Page">Project Home Page</a>
+                  </li>
+                  <li>
+                    <a href="#project-settings" class="toc-h2 toc-link" data-title="Project Settings">Project Settings</a>
+                    <ul class="toc-list-h3">
+                        <li>
+                          <a href="#change-a-project-detail" class="toc-h3 toc-link" data-title="Change a Project Detail">Change a Project Detail</a>
+                        </li>
+                        <li>
+                          <a href="#delete-a-project" class="toc-h3 toc-link" data-title="Delete a Project">Delete a Project</a>
+                        </li>
+                        <li>
+                          <a href="#restart-a-project" class="toc-h3 toc-link" data-title="Restart a Project">Restart a Project</a>
+                        </li>
+                        <li>
+                          <a href="#add-integrations-to-a-project" class="toc-h3 toc-link" data-title="Add Integrations to a Project">Add Integrations to a Project</a>
+                        </li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#test-cases" class="toc-h1 toc-link" data-title="Test Cases">Test Cases</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#test-case-presets" class="toc-h2 toc-link" data-title="Test Case Presets">Test Case Presets</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-test-case" class="toc-h2 toc-link" data-title="Create a Test Case">Create a Test Case</a>
+                  </li>
+                  <li>
+                    <a href="#test-case-home-page" class="toc-h2 toc-link" data-title="Test Case Home Page">Test Case Home Page</a>
+                    <ul class="toc-list-h3">
+                        <li>
+                          <a href="#test-case-settings" class="toc-h3 toc-link" data-title="Test Case Settings">Test Case Settings</a>
+                        </li>
+                        <li>
+                          <a href="#run-a-test-case" class="toc-h3 toc-link" data-title="Run a Test Case">Run a Test Case</a>
+                        </li>
+                        <li>
+                          <a href="#test-case-logs" class="toc-h3 toc-link" data-title="Test Case Logs">Test Case Logs</a>
+                        </li>
+                        <li>
+                          <a href="#test-case-insights" class="toc-h3 toc-link" data-title="Test Case Insights">Test Case Insights</a>
+                        </li>
+                        <li>
+                          <a href="#test-case-reports" class="toc-h3 toc-link" data-title="Test Case Reports">Test Case Reports</a>
+                        </li>
+                    </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#jobs" class="toc-h1 toc-link" data-title="Jobs">Jobs</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-job" class="toc-h2 toc-link" data-title="Create a Job">Create a Job</a>
+                    <ul class="toc-list-h3">
+                        <li>
+                          <a href="#generate-a-bash-script" class="toc-h3 toc-link" data-title="Generate a Bash Script">Generate a Bash Script</a>
+                        </li>
+                        <li>
+                          <a href="#manual-run" class="toc-h3 toc-link" data-title="Manual Run">Manual Run</a>
+                        </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#job-details" class="toc-h2 toc-link" data-title="Job Details">Job Details</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#glossary" class="toc-h1 toc-link" data-title="Glossary">Glossary</a>
+          </li>
+          <li>
+            <a href="#contribute-to-jeeves" class="toc-h1 toc-link" data-title="Contribute to Jeeves">Contribute to Jeeves</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://developer.dowjones.com/site/global/home/index.gsp'>Dow Jones Developer Portal</a></li>
+            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='jeeves'>Jeeves</h1>
+<p>Jeeves is a monitor tool to help developers analyze a project’s web performance. With Jeeves, developers can do the following:</p>
+
+<ul>
+<li>Group load the test cases by project profiles.</li>
+<li>Design the test cases to validate service availability and throughput.</li>
+<li>Run, stop, and reconfigure the load test scenarios to validate service availability.</li>
+<li>Monitor your website performance through different test cases.</li>
+<li>Obtain detailed reports with graphics about their website performance.</li>
+</ul>
+
+<p>Jeeves is composed by two main components:</p>
+
+<ul>
+<li><strong>Jeeves WebApp:</strong> Is the graphical interface of Jeeves. You can access it through <a href="http://jeeves.dev.shdsvc.dowjones.io/">the stag environment page</a> or you can create a <a href="#how-to-contribute">WebApp local workspace</a> to work with it in a local instance.<br></li>
+<li><strong>Jeeves API:</strong> Is the operational core of Jeeves. You can work with it through the Jeeves WebApp interface or through your computer terminal by creating an <a href="#how-to-contribute">API local workspace</a>.</li>
+</ul>
+
+<p>To help you work with the Jeeves WebApp and the Jeeves API, in this page you can find the following sections:</p>
+
+<ul>
+<li><a href="#overview">User Guide</a></li>
+<li><a href="#glossary">Glossary</a></li>
+<li><a href="#contribute-to-jeeves">Contribute to Jeeves</a></li>
+</ul>
+<h1 id='overview'>Overview</h1>
+<p>This documentation guides you through the sections and components of the Jeeves WebApp. It also contains guides for activities such as how to <a href="#create-a-project">create a project</a> or <a href="#create-a-test-case">create a test case</a>, so that you can start working with the Jeeves WebApp as smoothly as possible.</p>
+
+<p>The Jeeves WebApp User Guide contains the following sections: </p>
+
+<ul>
+<li><strong><a href="#home-page">Home Page</a>:</strong> Presents the information about the Jeeves Home page.</li>
+<li><strong><a href="#menu">Menu</a>:</strong> Presents the information about the different Menu options </li>
+<li><strong><a href="#projects">Projects</a>:</strong>  Presents the information about Projects in Jeeves, from how to create a Project to how to add an integration.</li>
+<li><strong><a href="#test-cases">Test Cases</a>:</strong> Presents the information about Test Cases in Jeeves, from how to create a test case to how to interpret test case reports.</li>
+<li><strong><a href="#jobs">Jobs</a>:</strong> Presents the information about Jobs in Jeeves, from how to create a job to what are the  job details.</li>
+</ul>
+
+<aside class="notice">Note: To have access to the Jeeves WebApp, you need to be connected to the <a href="https://docs.google.com/document/d/1vZSGBWDmi5Cnw8Hx1e7DLc6lRKgb321l4tsGZI2P9QQ/edit">Dow Jones GlobalConnect VPN</a>.
+</aside>
+<h1 id='home-page'>Home Page</h1>
+<p>The <strong>Jeeves WebApp Home page</strong> is the main page of Jeeves. When you access the Jeeves WebApp through your browser.  The Jeeves WebApp Home page contains two elements as shown in the following image:  </p>
+
+<ul>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#projects">Projects</a></li>
+</ul>
+
+<p></br>
+</br>
+<img src="images/jeeves-home-page-6f236d96.png" alt="Jeeves Home page screenshot"></p>
+
+<p></br>
+</br></p>
+
+<p>The following sections describe in detail each element of the Jeeves WebApp Home page.</p>
+<h1 id='menu'>Menu</h1>
+<p>The <strong>Jeeves Menu</strong>, located on the top of the page, displays the different sections of the Jeeves WebApp. The menu shows the following options:</p>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#monitor">Monitor</a></li>
+<li><a href="#user-guide">User Guide</a></li>
+<li><a href="#version">Version</a></li>
+</ul>
+
+<p>The following sections describe in detail each element of the Jeeves Menu.</p>
+
+<p><a href="#home-page" class="go-back"> ← Go back to the Home Page section </a></p>
+<h2 id='home'>Home</h2>
+<p>The <strong>Home</strong> option of the Jeeves Menu takes you to the Jeeves WebApp Home page. 
+You can also click the Jeeves button to do the same function. </p>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<h2 id='monitor'>Monitor</h2>
+<p>The <strong>Monitor</strong> option of the Jeeves Menu takes you to the Monitor page. The Monitor page shows information about the active and pending simulations happening  in the background of the Jeeves WebApp. The following image shows the Monitor page:</p>
+
+<p></br>
+<img src="images/jeeves-monitor-page-34088bf2.png" alt="Jeeves Monitor page screenshot">
+</br>
+</br></p>
+
+<p>The <strong>Monitor</strong> page contains the following two tables:</p>
+
+<ul>
+<li><p><strong>Active Simulations:</strong> Located on the left, it shows the information about the active test cases running on the Jeeves WebApp. It includes the following information:</p>
+
+<ul>
+<li><strong>Pool Status:</strong> The percentage of progress of activities completed up to time.</li>
+<li><strong>Project:</strong> The name of the running test case project.</li>
+<li><strong>Test Case:</strong> The name of the test case running.</li>
+<li><strong>Time Running:</strong> The time passed during the executionThe time elapsed during the test case run process.</li>
+</ul>
+
+<aside class="notice">Additionally, on the right side of the Active Simulations heading, you can find the number of test cases running displayed inside the parenthesis.
+</aside>
+
+<p></br></p></li>
+<li><p><strong>Pending Simulations:</strong>Located on the right, it presents the information about the pending simulations to run on the Jeeves WebApp. It includes the following information:</p>
+
+<ul>
+<li><strong>Queue Status:</strong> The progress percentage of activities queued that have been achieved up to timeThe percentage of progress of queued activities that have been completed up to time.</li>
+<li><strong>Project:</strong> The name of the  test case project to run.</li>
+<li><strong>Test Case:</strong> The name of the test case to run.</li>
+<li><strong>Time Running:</strong> The expected time to run the test case.</li>
+</ul>
+
+<aside class="notice">Additionally, on the right side of the <strong>Pending Simulations</strong> title, you can find the number of test cases pending to run displayed inside the parenthesis.
+</aside>
+
+<p></br></p>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p></li>
+</ul>
+<h2 id='user-guide'>User Guide</h2>
+<p>The <strong>User Guide</strong> option of the Jeeves Menu takes you to the Jeeves WebApp User Guide. The User Guide shows you information about how to work with the Jeeves WebApp. Additionally, it shows you how to configure the virtual workspace for the Jeeves WebApp and Jeeves API, as well as the API Reference documentation. </p>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<h2 id='version'>Version</h2>
+<p>Located in the top-right corner of the page, the <strong>Version</strong> option of the Jeeves Menu takes you to the Instance Details page. The Instance Details page is divided into two sections that show information about the instance:
+</br></p>
+
+<ul>
+<li><strong>Run Engine:</strong> Shows the type of engine in which the instance is running. The engine changes depending on whether it is a local instance or one in the cloud:</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Instance</th>
+<th>Engine</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Cloud</td>
+<td>Amazon Web Services (AWS) Spot Instance</td>
+</tr>
+<tr>
+<td>Local</td>
+<td>Localhost Image</td>
+</tr>
+</tbody></table>
+
+<p></br></p>
+
+<ul>
+<li><strong>Fleet Resources:</strong> Shows the information about the Fleet Request for AWS. Each fleet request contains an N number of Spot instances where Jeeves runs the test cases.  The information presented of each Fleet Request is the following:</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Section</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VPC (Virtual Private Cloud)</td>
+<td>Name</td>
+<td>The name of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>bu</td>
+<td>The Dow Jones (DJ) Business Unit of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>environment</td>
+<td>The type of environment in which the VPC is</td>
+</tr>
+<tr>
+<td></td>
+<td>owner</td>
+<td>The email of the VPC owner</td>
+</tr>
+<tr>
+<td></td>
+<td>product</td>
+<td>The type of product of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>component</td>
+<td>The DJ Component to which the VPC belongs</td>
+</tr>
+<tr>
+<td></td>
+<td>servicename</td>
+<td>The name of the service provided</td>
+</tr>
+<tr>
+<td>AZ (Amazon Zone)</td>
+<td>location</td>
+<td>The geographical location of the AWS VPC</td>
+</tr>
+<tr>
+<td>SUBNET</td>
+<td>Name</td>
+<td>The name of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>bu</td>
+<td>The DJ Business Unit of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>environment</td>
+<td>The type of environment in which the VPC is deployed</td>
+</tr>
+<tr>
+<td></td>
+<td>owner</td>
+<td>The email of the VPC owner</td>
+</tr>
+<tr>
+<td></td>
+<td>product</td>
+<td>The type of product of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>component</td>
+<td>The DJ Component to which the VPC belongs</td>
+</tr>
+<tr>
+<td></td>
+<td>servicename</td>
+<td>The name of the service provided</td>
+</tr>
+</tbody></table>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<h1 id='projects'>Projects</h1>
+<p>In Jeeves, <strong>Projects</strong> function as profiles for test cases. You can create Projects to group test cases aimed at a specific web page or web app and organize your test cases by Project profile.</p>
+
+<p>Your Projects are displayed on the Jeeves Home page, organized in a table by date of creation.  To access a Project, click its name, and the Jeeves WebApp will direct you to the Home page of the Project you selected.</p>
+
+<aside class="warning">All Jeeves users have access to all Projects created in Jeeves. Only work on the Projects you created to avoid inconsistencies or problems inside other Projects. 
+</aside>
+
+<p>This section contains the following topics:</p>
+
+<ul>
+<li><a href="#create-a-project">Create a Project</a></li>
+<li><a href="#project-home-page">Project Home Page</a></li>
+<li><a href="#project-settings">Project Settings</a>
+
+<ul>
+<li><a href="#change-a-project-detail">Change a Project Detail</a></li>
+<li><a href="#delete-a-project">Delete a Project</a></li>
+<li><a href="#restart-a-project">Restart a Project</a></li>
+<li><a href="#add-integrations-to-a-project">Add Integrations to a Project</a></li>
+</ul></li>
+</ul>
+
+<p><a href="#home-page" class="go-back"> ← Go back to the Home Page section </a></p>
+<h2 id='create-a-project'>Create a Project</h2>
+<p>To <strong>create a new Project</strong> profile, follow these steps:</p>
+
+<ol>
+<li>Open the <strong>Jeeves WebApp Home page</strong>.</li>
+<li>Click the <strong>+ Create</strong>  button on the upper right corner of the page.
+</br>The <strong>New Project</strong> page appears.</li>
+<li>Enter the name of the new Project in the <strong>Name</strong> field.</li>
+<li>Enter the name of the Project team in the <strong>Team</strong> field.</li>
+<li>Enter the name of the Project business unit in the <strong>Business Unit</strong> field.</li>
+<li>Enter the url to the Project repository in the <strong>Repository</strong> field.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>Your new Project appears in the Home page.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have created a Project profile successfully.
+</aside> 
+
+<p>To start working with your project, see the <a href="#project-home-page">Project Home page</a> section.</p>
+
+<p><a href="#projects" class="go-back"> ← Go back to the Projects section </a></p>
+<h2 id='project-home-page'>Project Home Page</h2>
+<p>Project profiles have a <strong>Home page</strong> that showcases the test cases and jobs created for that specific Project. After creating a new Project, the Project Home page is shown as an empty canvas waiting for test cases or jobs to be created.  See the section <a href="#test-cases">Test Cases</a> and <a href="#jobs">Jobs</a> to learn how to create a Test Case or a Job.</p>
+
+<p>To learn how to configure your Project, see the <a href="#project-settings">Project Settings</a> section.</p>
+
+<p><a href="#projects" class="go-back"> ← Go back to the Projects section </a></p>
+<h2 id='project-settings'>Project Settings</h2>
+<p>The Project Home page also shows the <strong>Project Settings</strong> option, located on the top right corner of the page. You can identify it by the gear icon. </p>
+
+<p><img src="images/jeeves-project-settings-4343e0e3.png" alt="Jeeves Project Settings button screenshot"></p>
+
+<p>The <strong>Project Settings</strong>  page shows you the available settings to configure the Project profile that you are in. It displays the settings ordered in three tabs:</p>
+
+<ul>
+<li><p><strong>About this Project:</strong>  Shows the details about the project. The available details for a Project profile are:</p>
+
+<ul>
+<li><strong>Name:</strong> The name of the Project profile.</li>
+<li><strong>Team:</strong> The name of the team creating the Project profile.</li>
+<li><strong>Business Unit:</strong> The name of the Team Business Unit.</li>
+<li><strong>Repository:</strong> The URL to the Project code repository in GitHub.</li>
+</ul></li>
+<li><p><strong>Integrations:</strong> Adds integrations with other applications (for example, Slack).</p></li>
+<li><p><strong>Other Settings:</strong> Shows other configuration settings for the Project.</p></li>
+</ul>
+
+<p>In the following sections, you can learn more about the different settings available for the Jeeves Projects profiles. </p>
+
+<ul>
+<li><a href="#change-a-project-detail">Change a Project Detail</a></li>
+<li><a href="#delete-a-project">Delete a Project</a></li>
+<li><a href="#restart-a-project">Restart a Project</a></li>
+<li><a href="#add-integrations-to-a-project">Add Integrations to a Project</a></li>
+</ul>
+
+<p><a href="#projects" class="go-back"> ← Go back to the Projects section </a></p>
+<h3 id='change-a-project-detail'>Change a Project Detail</h3>
+<p>To <strong>change the Project profile details</strong>, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home</strong> page appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the <strong>About this Project</strong> tab.
+</br>The <strong>Project Details</strong> page appears.</li>
+<li>Enter the new name for the Project in the <strong>Name</strong> field.</li>
+<li>Enter the new name of the Project Team in the <strong>Team</strong> field.</li>
+<li>Enter the new name of the Business Unit of the Project Team in the <strong>Business Unit</strong> field.</li>
+<li>Enter the new URL to the Project code repository in the <strong>Repository</strong> field.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Project Details page saves and displays the new details</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have changed the details of the Project successfully.
+</aside>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h3 id='delete-a-project'>Delete a Project</h3>
+<p>To <strong>delete a Project</strong> profile, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home page</strong> appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the <strong>Other Settings</strong> tab.
+</br>A checklist with options appears.</li>
+<li>Select the <strong>Delete this Project</strong> option.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Project is deleted and the Jeeves WebApp Home page appears..</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have deleted the Project successfully.
+</aside>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h3 id='restart-a-project'>Restart a Project</h3>
+<p>When you restart a Project, Jeeves deletes all the Test Cases loaded to the Project without changing the settings of the Project. </p>
+
+<p>To <strong>restart a Project</strong>, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home page</strong> appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the <strong>Other Settings</strong> tab.
+</br>A checklist with options appears.</li>
+<li>Select the <strong>Start Over</strong> option.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Project Home page appears without any test cases loaded.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have restarted the Project profile successfully.
+</aside>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h3 id='add-integrations-to-a-project'>Add Integrations to a Project</h3>
+<p>Currently, Jeeves integrates with Slack to deliver channel notifications and alerts about the status of a test case run of a specific Project.<br>
+To integrate Slack Notifications to a Project, you need to follow these two procedures, which are described in detail in the following sections: </p>
+
+<ol>
+<li><a href="#1-create-a-slack-channel-webhook">Create a Slack channel WebHook</a></li>
+<li><a href="#2-integrate-slack-notifications-to-a-project-profile">Integrate Slack notifications to a Project profile</a></li>
+</ol>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h4 id='1-create-a-slack-channel-webhook'>1. Create a Slack Channel WebHook</h4>
+<p>To <strong>create a Slack Channel WebHook</strong> to integrate received notifications in your Slack channel, follow these steps:</p>
+
+<ol>
+<li>Access the <a href="https://dowjones.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks"><strong>Dow Jones Slack Channel Incoming WebHooks</strong></a> page in your browser.
+</br>The <strong>Incoming WebHooks</strong> page appears.</li>
+<li>In the <strong>Post to Channel</strong> section, select your channel from the dropdown menu.</li>
+<li>Click the <strong>Add Incoming WebHooks integration</strong> button.
+</br>A page with the WebHook integration information appears.</li>
+<li>Save the <strong>WebHook URL</strong> for the following steps.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have created the WebHook URL to integrate Jeeves with your Slack channel.
+</aside>
+
+<p>To integrate Jeeves to your slack channel, see the <a href="#integrate-slack-notifications-to-a-project-profile">Integrate Slack Notifications to a Project Profile</a> section.</p>
+<h4 id='2-integrate-slack-notifications-to-a-project-profile'>2. Integrate Slack Notifications to a Project Profile</h4>
+<p>To <strong>integrate Slack notifications</strong> to a Project profile, follow these steps:</p>
+
+<aside class="notice">Before proceeding to perform these steps, you must follow the steps in the <a href="#2-integrate-slack-notifications-to-a-project">Create a Slack Channel WebHook</a> section.
+</aside>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home</strong> page appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the tab <strong>Integrations</strong>.
+</br>A form to configure the integration appears.</li>
+<li>Type the name of your Projects Slack Channel in the <strong>Channel Name</strong> field.</li>
+<li>Type the WebHook URL in the <strong>WebHook Url</strong> field. See how to get the URL in the Create A Slack Channel WebHook steps.</li>
+<li>Select the type of notification in the <strong>Notification Trigger</strong> section. You can choose from the following options:
+
+<ul>
+<li><strong>OK:</strong> Notifies that a test case ran successfully. </li>
+<li><strong>Warning:</strong> Notifies that a test case ran with errors.</li>
+<li><strong>Bad:</strong> Notifies that a test case ran with unsuccessful  results.</li>
+<li><strong>None:</strong> Does not notify when a test case runs.</li>
+</ul></li>
+<li>Select the type of alert in the <strong>Alert Trigger</strong> section. You can choose from the following options:
+
+<ul>
+<li><strong>OK:</strong> Notifies that a test case ran successfully. </li>
+<li><strong>Warning:</strong> Notifies that a test case ran with errors.</li>
+<li><strong>Bad:</strong> Notifies that a test case ran with unsuccessful results.</li>
+<li><strong>None:</strong> Does not notify when a test case runs.</li>
+</ul></li>
+<li>Click the <strong>Ok</strong> button.
+</br>Jeeves is integrated to your Slack channel. </li>
+</ol>
+
+<aside class="success">After integrating Slack notifications to your Slack channel, you will receive the notifications every time the conditions that you configured happen.  
+</aside>
+
+<p>Once you created and configured your Project profile, it is time to create and configure the test cases for your Project website or web application. 
+The <a href="#test-cases">Test Cases</a> section walks you through the process of  creating, configuring, and running Test Cases.</p>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h1 id='test-cases'>Test Cases</h1>
+<p>Jeeves Projects contain <strong>Test Cases</strong>. You can create Test Cases to examine the availability and throughput of a website or web application which enables you to look for for features to improve points or bugs to fix. </p>
+
+<p>This section contains you the following information about Test Cases:</p>
+
+<ul>
+<li><a href="#test-case-presets">Test Case Presets</a></li>
+<li><a href="#create-a-test-case">Create a Test Case</a></li>
+<li><a href="#test-case-settings">Test Case Settings</a>
+
+<ul>
+<li><a href="#run-parameters">Run Parameters</a></li>
+<li><a href="#health-checks">Health Checks</a></li>
+<li><a href="#charts-and-indicators">Charts and Indicators</a></li>
+<li><a href="#rename-a-test-case">Rename a Test Case</a></li>
+<li><a href="#delete-a-test-case">Delete a Test Case</a></li>
+</ul></li>
+<li><a href="#test-case-home-page">Test Case Home Page</a>
+
+<ul>
+<li><a href="#run-a-test-case">Run a Test Case</a></li>
+<li><a href="#test-case-logs">Test Case Logs</a></li>
+<li><a href="#test-case-insights">Test Case Insights</a></li>
+<li><a href="#test-case-reports">Test Case Reports</a></li>
+</ul></li>
+</ul>
+<h2 id='test-case-presets'>Test Case Presets</h2>
+<p>When you start to <a href="#create-a-test-case">create a Test Case</a>, Jeeves prompts you to choose a Preset. A <strong>Preset</strong> is a type of prefabricated Test Case configuration, which you can modify to fit your Projects testing needs. </p>
+
+<p>The following table lists the Test Case Presets available in Jeeves:</p>
+
+<table><thead>
+<tr>
+<th>Preset</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Get a Single Url</strong></td>
+<td>Tests the response time to get a single URL for a fixed RPS number.</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url Changing a Header Value</strong></td>
+<td>Tests the response time to get a single URL for a fixed RPS number changing a header value.</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url Changing a Path Parameter</strong></td>
+<td>Tests the response time to get a single URL for a fixed RPS number changing a path parameter.</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url Changing a Query Value</strong></td>
+<td>Tests the response time to get a single URL for a fixed RPS number changing a query value.</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url from Different Hosts</strong></td>
+<td>Tests the response time to get a single URL for a fixed RPS number from different hosts.</td>
+</tr>
+<tr>
+<td><strong>Post to a Single Url</strong></td>
+<td>Tests the response time to post to  a single URL for a fixed RPS number.</td>
+</tr>
+<tr>
+<td><strong>Post to a Single Url Changing a Query Value</strong></td>
+<td>Tests the response time to post to  a single URL for a fixed RPS number changing a query value.</td>
+</tr>
+<tr>
+<td><strong>Copy the Configuration from a Different Test Case</strong></td>
+<td>Creates a Test Case copying the configuration of the Test Case name given.</td>
+</tr>
+</tbody></table>
+
+<p>To learn how to create a Test Case, see the <a href="#create-a-test-case">Create a Test Case</a> section.</p>
+
+<aside class="warning"> To know more about the specific configuration parameters of each Preset, see the <a href="#preset">Preset</a> subsection of the <a href="#run-parameters">Run Parameters</a> section.
+</aside>
+
+<p><a href="#test-cases" class="go-back"> ← Go back to the Test Cases section </a></p>
+<h2 id='create-a-test-case'>Create a Test Case</h2>
+<p>To create a new <strong>Test Case</strong> for a project profile, follow these steps:</p>
+
+<ol>
+<li>Select a project from the <strong>Jeeves WebApp</strong> home page.
+</br>The selected project home page appears.</li>
+<li>Select the <strong>Test Cases</strong> tab.</li>
+<li>Click the <strong>+ Create</strong> button in the top left corner of the <strong>Test Cases</strong> tab.
+</br>The <strong>New Test Case</strong> page appears.</li>
+<li>Enter the name of your new Test Case in the <strong>Name</strong> field.</li>
+<li>Select a <strong>Preset</strong> type for your new Test Case.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>A new empty <strong>Test Case Home page</strong> appears.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have created a Test Case successfully.
+</aside>
+
+<p>To learn more about how to run and configure Test Cases, see the <a href="#test-case-home-page">Test Case Home Page</a> section.</p>
+
+<p><a href="#test-cases" class="go-back"> ← Go back to the Test Cases section </a></p>
+<h2 id='test-case-home-page'>Test Case Home Page</h2>
+<p>Test Cases have a <strong>Home page</strong> where you can view the information obtained from the previous Test Case runs, or configure your Test Case to fit your testing needs. The Test Case Home page shows the following sections: </p>
+
+<ul>
+<li><a href="#test-case-settings">Test Case Settings</a></li>
+<li><a href="#run-a-test-case">Run a Test Case</a></li>
+<li><a href="#test-case-insights">Test Case Insights</a></li>
+<li><a href="#test-case-logs">Test Case Logs</a></li>
+<li><a href="#test-case-reports">Test Case Reports</a></li>
+</ul>
+
+<p>After creating a new Test Case, the Test Case information sections are empty and the Test Case is set up with default configuration, which you need to edit to be able to test your Project.<br>
+To learn how to configure your Test Case, see the <a href="#test-case-settings">Test Case Settings</a> section.</p>
+
+<p><a href="#test-cases" class="go-back"> ← Go back to the Test Cases section </a></p>
+<h3 id='test-case-settings'>Test Case Settings</h3>
+<p>Test Cases are configured with default settings when created. To test your web page or web application, you must adapt this configuration to your Test Case setting. </p>
+
+<p>To access a <strong>Test Case Settings</strong>, follow these steps:</p>
+
+<ol>
+<li>Select a Test Case from the selected <strong>Project</strong> home page.</li>
+<li>Click the name of the selected Test Case.
+</br>The selected Test Case home page appears.</li>
+<li>Click the <strong>Testcase Settings</strong> button on the top right corner of the <strong>Test Case Home page</strong>.
+</br>The <strong>Test Case settings</strong> page appears.</li>
+</ol>
+
+<p>The <strong>Test Case Settings</strong> page contains the following tabs, each one containing parameters and settings that can be adapted to your Project Test Case settings. The following sections show information about the configuration settings on the following tabs: </p>
+
+<ul>
+<li><a href="#run-parameters">Run Parameters</a></li>
+<li><a href="#health-checks">Health Checks</a></li>
+<li><a href="#charts-and-indicators">Charts and Indicators</a></li>
+<li><a href="#rename-a-test-case">Rename a Test Case</a></li>
+<li><a href="#delete-a-test-case">Delete a Test Case</a></li>
+</ul>
+
+<p><a href="#test-cases-home-page" class="go-back"> ← Go back to the Test Cases Home Page section </a></p>
+<h4 id='run-parameters'>Run Parameters</h4>
+<p>The <strong>Run Parameters</strong> configuration settings define the way a Test Case runs. The Run Parameters are JSON files that store the information that defines a Test Case, like the target <a href="#url">URL</a> or the number of <a href="#config">requests per second (RPS)</a>.</p>
+
+<p>The Run Parameters settings tab can present the following sections, depending of the Preset of the Test Case:</p>
+
+<ul>
+<li><a href="#preset">Preset</a></li>
+<li><a href="#config">Config</a></li>
+<li><a href="#run-agent">Run Agent</a></li>
+<li><a href="#url">URL</a></li>
+<li><a href="#headers">Headers</a></li>
+<li><a href="#expected-status">Expected Status</a></li>
+<li><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></li>
+</ul>
+
+<p>To know about the specific parameters for each Test Case Preset, see the <a href="#preset">Preset</a> section.</p>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Cases Settings section </a></p>
+<h4 id='preset'>Preset</h4>
+<p>A <strong>Preset</strong> is the type of configuration that you selected when creating your Test Case. The Preset contains the prefabricated configuration of a Test Case to be modified to fit your testing needs. </p>
+
+<p>Depending on the type of Preset you select, some parameters may vary. The following table lists the Presets and their available configurations: </p>
+
+<table><thead>
+<tr>
+<th>Preset</th>
+<th>Available Configurations</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Get a Single Url</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+</tr>
+<tr>
+<td></td>
+<td>Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url Changing a Header Value</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Header Key</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Header Values</td>
+</tr>
+<tr>
+<td></td>
+<td>Default Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url Changing a Path Parameter</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Values</td>
+</tr>
+<tr>
+<td></td>
+<td>Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url Changing a Query Value</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Values</td>
+</tr>
+<tr>
+<td></td>
+<td>Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+<tr>
+<td><strong>Get a Single Url from Different Hosts</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Hosts</td>
+</tr>
+<tr>
+<td></td>
+<td>Path</td>
+</tr>
+<tr>
+<td></td>
+<td>Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+<tr>
+<td><strong>Post to a Single Url</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Body</td>
+</tr>
+<tr>
+<td></td>
+<td>Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+<tr>
+<td><strong>Post to a Single Url Changing a Query Value</strong></td>
+<td>Config</td>
+</tr>
+<tr>
+<td></td>
+<td>Url</td>
+</tr>
+<tr>
+<td></td>
+<td>Dynamic Values</td>
+</tr>
+<tr>
+<td></td>
+<td>Body</td>
+</tr>
+<tr>
+<td></td>
+<td>Headers</td>
+</tr>
+<tr>
+<td></td>
+<td>Expected Status</td>
+</tr>
+</tbody></table>
+
+<p>To change the <strong>Preset</strong> type of your Test Case,  follow these steps:</p>
+
+<ol>
+<li>Click the <strong>Preset</strong> section of the <strong>Run Parameters</strong> tab.
+</br>A dropdown menu with the Preset options appears.</li>
+<li>Select the new <strong>Preset</strong> configuration for your Test Case.</li>
+<li>Click the <strong>Ok</strong> Button.
+</br>Jeeves loads the default settings of the new Preset.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have changed your Test Case Preset successfully. 
+</aside>
+
+<p>To learn more about the Run Agent configuration of your Test Case, see the <a href="#run-agent">Run Agent</a> section.</p>
+<h4 id='run-agent'>Run Agent</h4>
+<p>The <strong>Run Agent</strong> section of the Run Parameters shows the configuration for the Test Case Run Agent. The Run Agent configuration appears when working with any environment other than localhost. </p>
+
+<p>The following table lists the available parameters of the Run Agent section:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Peers</strong></td>
+<td>The number of AWS Spot Instances in which the Test Case runs.</td>
+<td>Integer</td>
+<td>Each Peer runs as a separate node with its own workload, but results are grouped.</td>
+</tr>
+<tr>
+<td><strong>Warmup Url</strong></td>
+<td>The URL to test connectivity to the Test Case target host.</td>
+<td>String</td>
+<td>The Warmup Url and the Target URL of the Test Case must belong to the same host. In case the Warmup Url is not reachable, the Test Case doesn’t run.</td>
+</tr>
+<tr>
+<td><strong>Spot Size</strong></td>
+<td>The size and characteristics configuration of the Spot Instance.</td>
+<td>String</td>
+<td>For further information on the Spot Instances sizes configuration, see the <a href="https://aws.amazon.com/ec2/instance-types/">Amazon EC2 Instance Types</a> page by Amazon.</td>
+</tr>
+</tbody></table>
+
+<p>To edit the <strong>Run Agent</strong> parameters, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Run Agent</strong> tab in the <strong>Run Parameters</strong> page.
+</br>A page with the <strong>Run Agent</strong> parameters fields appears.</li>
+<li>Enter the number of peers in the <strong>Peers</strong> field.</li>
+<li>Enter the Warm up URL to test connectivity to the host in the <strong>Warmup Url</strong> field. </li>
+<li>Select the type of Spot Instance from the <strong>Spot Size</strong> dropdown list.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Run Agent parameters are set up.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have set up your Run Agent settings successfully.
+</aside>
+
+<p>To learn more about the Run Parameters configuration of your Test Case, see the <a href="#config">Config</a> section.</p>
+
+<p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
+<h4 id='config'>Config</h4>
+<p>The <strong>Config</strong> section of the Run Parameters shows the JSON file that contains the environment parameters for the Test Case to be replicated. Each Test Case requires a set of parameters that vary depending on the Test Case Preset.
+The following table lists the available parameters of the Config JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>rps (Request Per Second)</strong></td>
+<td>The number of request the Test Case does to target URL</td>
+<td>Integer</td>
+<td>Valid Values: 1 to 360,000</td>
+</tr>
+<tr>
+<td><strong>rampup</strong></td>
+<td>The speed at which new concurrent requests try to access the target URL</td>
+<td>Integer</td>
+<td>Valid Values: 0 to 7,200</td>
+</tr>
+<tr>
+<td><strong>duration</strong></td>
+<td>The time in seconds to complete the Test Case run</td>
+<td>Integer</td>
+<td>Valid Values: 5 to 7,200</td>
+</tr>
+<tr>
+<td><strong>strategy</strong></td>
+<td>The form in which the data samples are selected</td>
+<td>String</td>
+<td>Valid Values: Circular Random</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>In Circular strategy, each peer start in index 0</td>
+</tr>
+<tr>
+<td><strong>followRedirects</strong></td>
+<td>The boolean that defines if the target URL will load the following redirect resource</td>
+<td>Boolean</td>
+<td>Default value: false</td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of a Config parameters JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"rps"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rampup"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"followRedirects"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"strategy"</span><span class="p">:</span><span class="w"> </span><span class="s2">"random"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>To edit the <strong>Config</strong> parameters, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Config</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Config</strong> field appears.</li>
+<li>Enter the RPS  for your Test Case in the <strong>Rps</strong> field.</li>
+<li>Enter the seconds to reach the target RPS for your Test Case in the <strong>Rampup</strong> field.</li>
+<li>Enter the seconds to complete your Test Case in the <strong>Duration</strong> field.</li>
+<li>If applicable, select the data selection Strategy for your test case with the <strong>Circular</strong> or <strong>Random</strong> button.</li>
+<li>If applicable, define if your Test Case loads the following redirect source with the <strong>Follow Redirects</strong> switch.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Config settings are set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Config settings successfully.
+</aside>
+
+<p>To know how to set up a Test Case URL, see the <a href="#url">URL</a> section.</p>
+
+<p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
+<h4 id='url'>URL</h4>
+<p>The <strong>URL</strong> section of the Run Parameters shows the JSON file with the Target URL for the Test Case. The target URL defines the web address of the project being tested. The following table lists the available parameters of the URL JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>url</strong></td>
+<td>The Target URL for the Test Case</td>
+<td>String</td>
+<td>To learn how to add Path or Query Parameters, see the <a href="#dynamic-run-parameters">Dynamic Run Parameters</a> section.</td>
+</tr>
+</tbody></table>
+
+<p>The following script  is an example of a Target URL JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"url"</span><span class="p">:</span><span class="s2">"https://petstore.octoperf.com/actions/Catalog.action"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>For more information on Target URLs using Path or Query values, see the <a href="#dynamic-run-parameters">Dynamic Run Parameters</a> section.</p>
+
+<p>To edit the <strong>Target URL</strong>, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>URL</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Url</strong> field appears.</li>
+<li>Enter the URL for your Test Case in the <strong>Url</strong> field.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Config settings are set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Target URL successfully.
+</aside>
+
+<p>To know how to set up the headers of a Target URL, see the <a href="#headers">Headers</a> section.</p>
+
+<p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
+<h4 id='headers'>Headers</h4>
+<p>The <strong>Headers</strong> section of the Run Parameters shows the JSON file with the HTTP Headers needed to run the Test Case. Headers let Jeeves and the web server pass additional information with an HTTP Request or Response. The following table lists the parameters of the Headers JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>key</strong></td>
+<td>The name of the default HTTP Header of the Target URL.</td>
+<td>String</td>
+<td>For further information on Headers, see the <a href="https://developer.cdn.mozilla.net/en-US/docs/Web/HTTP/Headers">HTTP Header</a> list by MDN Web Docs.</td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value that the default HTTP Header receives in the Target URL server.</td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of a Headers JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accept"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"*/*"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accept-Language"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en-US,en;q=0.5"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>To edit the <strong>Headers</strong> list, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Headers</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Key</strong> and <strong>Value</strong> fields appears.</li>
+<li>Edit the name of your Default Header in the <strong>Key</strong> field.</li>
+<li>Edit the Value of your Default Header in the <strong>Value</strong> field:
+</br>a. Click the <strong>+</strong> plus button to add a new <strong>Default Header</strong>.
+</br>b. Repeat steps 3 and 4.
+</br>c. Repeat step 4.a if necessary.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Headers are set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Headers successfully.
+</aside>
+
+<p>To know how to set up a Test Case Expected Status, see the <a href="#expected-status">Expected Status</a> section.</p>
+
+<p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
+<h4 id='expected-status'>Expected Status</h4>
+<p>The <strong>Expected Status</strong> section of the Run Parameters shows the JSON file with the expected Status Code Responses after each request run. The following table lists the available parameters of the Expected Status JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>status</strong></td>
+<td>The number of the HTTP Status Code expected after the Test Case run.</td>
+<td>String</td>
+<td>For further information on Status Codes see the <a href="&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Status&quot;">HTTP Status Code</a> list by MDN Web Docs.</td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of an Expected Statuses JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">201</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">202</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>For further information on the meaning of the status codes, see the <a href="&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Status&quot;">HTTP Response Status Codes</a> page by the MDN Web Docs.</p>
+
+<p>To edit the <strong>Expected Status</strong> JSON file, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Expected Status</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Status</strong> field appears.</li>
+<li>Modify the value of your Status codes:
+</br>a. Click the <strong>+</strong> plus button to add a new <strong>Expected Status</strong>.
+</br>b. Repeat the previous step if necessary.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Expected Status codes are now set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Expected Status codes successfully.
+</aside>
+
+<p>To know how to set up Dynamic Run Parameters in Test Cases that change a parameter, see the <a href="#dynamic-run-parameters">Dynamic Run Parameters</a> section.</p>
+
+<p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
+<h4 id='dynamic-run-parameters'>Dynamic Run Parameters</h4>
+<p>Test Cases created with the following Presets have <strong>Dynamic Run Parameters</strong> to configure: </p>
+
+<ul>
+<li>Get a Single Url Changing a Path Parameter</li>
+<li>Get a Single Url Changing a Query Value</li>
+<li>Post to a Single Url Changing a Header Value</li>
+<li>Get a Single Url from Different Hosts</li>
+<li>Post to a Single Url</li>
+</ul>
+
+<p>The <strong>Dynamic Run Parameters</strong> section shows the JSON files with the Path, Query, Header, Host, or Body parameters to change to the target URL when running a Test Case. To use Dynamic Values, you must configure the following depending of your Test Case <a href="#preset">Preset</a>:</p>
+
+<ul>
+<li><a href="#path-and-query-parameters">Path and Query Parameters</a>
+
+<ul>
+<li><a href="#dynamic-target-url">Dynamic Target URL</a></li>
+<li><a href="#dynamic-values">Dynamic Values</a></li>
+</ul></li>
+<li><a href="#header-parameters">Header Parameters</a>
+
+<ul>
+<li><a href="#dynamic-key-header">Dynamic Key Header</a></li>
+<li><a href="#dynamic-header-values">Dynamic Header Values</a></li>
+<li><a href="#default-headers">Default Headers</a></li>
+</ul></li>
+<li><a href="#host-parameters">Host Parameters</a>
+
+<ul>
+<li><a href="#dynamic-hosts">Dynamic Hosts</a></li>
+<li><a href="#path">Path</a></li>
+</ul></li>
+<li><a href="#body-parameter">Body Parameter</a></li>
+</ul>
+
+<p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
+<h5 id='path-and-query-parameters'>Path and Query Parameters</h5>
+<p>The <strong>Path and Query parameters</strong> enable Jeeves to change a part of the Target URL to access sections of the Web page or Web App to test with a Test Case.  Path and Query parameters are defined in the URL, but they have different structure and objective:</p>
+
+<ul>
+<li><strong>Path parameters:</strong> Enable developers to identify a specific item from a resource. </li>
+</ul>
+<div class="highlight"><pre class="highlight plaintext"><code>  # Get the user with the id 123
+  https://mypage.com/users/123 
+</code></pre></div>
+<ul>
+<li><strong>Query parameters:</strong> Enable developers to filter or sort items from a resource.</li>
+</ul>
+<div class="highlight"><pre class="highlight plaintext"><code>  # Get all users with the occupation "technical writer"
+  www.mypage.com/users?occupation=technical-writer 
+</code></pre></div>
+<p>To learn how to change Path and Query parameters to the Target URL, see the <a href="#dynamic-target-url">Dynamic Target URL</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='dynamic-target-url'>Dynamic Target URL</h6>
+<p>Jeeves uses String Interpolation to change the Path or Query parameters in the <strong>Dynamic Target URL</strong> with the values defined in the Dynamic Values JSON File. To achieve this, Jeeves defines the path and query parameters on the Target URL by using the following structure:</p>
+
+<p>This is an example of a Path parameter:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>/${path-parameter}/
+</code></pre></div>
+<p>This is an example of a Query parameter:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>?query-parameter=${query-value}
+</code></pre></div>
+<p>This is an example of the Target URL with a Path parameter:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>https://en.wikipedia.org/wiki/The_Wall_Street_Journal
+</code></pre></div>
+<p>This is an example of the Target URL with a Query parameter:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>https://en.wikipedia.org/wiki/Special:RecentChanges?hidebots=1
+</code></pre></div>
+<p>To set a <strong>Dynamic Target URL</strong>, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Url</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> or <strong>Raw Edit</strong> option tab.</li>
+<li>Edit your Target URL like the following example including your Path or Query parameters:
+</br><code>https://mypage.com/${path-parameter}?query-parameter=${query-value}</code></li>
+<li>Click the <strong>Ok</strong> button.
+</br>Your Dynamic Target URL is set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Dynamic Target URL successfully.
+</aside>
+
+<p>To define the Dynamic Values JSON file, see the <a href="#dynamic-values">Dynamic Values</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='dynamic-values'>Dynamic Values</h6>
+<p>Once you set up your <a href="#dynamic-target-url">Dynamic Target URL</a>, you must define the values of the Path and Query parameters of your Dynamic Target URL so the Test Case can run the testing correctly. </p>
+
+<p>The following script is an example of a  Dynamic Values JSON file for the example Target URL:</p>
+
+<p>Example Target URL:</p>
+
+<p><code>https://professional.dowjones.com/${page}</code></p>
+
+<p>Dynamic values JSON file:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>  {
+    "key": "page",
+    "value": "risk"
+  },
+  {
+    "key": "page",
+    "value": "factiva"
+  },
+  {
+    "key": "page",
+    "value": "newswires"
+  }
+]
+</code></pre></div>
+<p>The example above contains a Target URL with one <a href="#path-and-query-parameters">Path parameter</a>, and the Dynamic Values JSON file with the three values for the path parameter of the Target URL. </p>
+
+<p>To set up the <strong>Dynamic Values</strong> for a Test Case, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Dynamic Values</strong> tab in the <strong>Run Parameters</strong> page</li>
+<li>Select the <strong>Form Edit</strong> option tab
+</br>A page with the <strong>Value</strong> field appears</li>
+<li>Edit the value of your Path Parameter in the <strong>Value</strong> field
+</br>a. Click the <strong>+</strong> plus button to add a new Dynamic Value
+</br>b. Repeat the previous step if necessary</li>
+<li>Click the <strong>Ok</strong> button to save your changes
+</br>Your Dynamic Values are set up</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Dynamic Values successfully.
+</aside>
+
+<p>To know how to set up your Test Cases to use Dynamic Headers, see the <a href="#header-parameters">Header Parameters</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='header-parameters'>Header Parameters</h6>
+<p>Test Cases created with the  Get a Single Url Changing a Header Value Preset test the functionality of a web page by changing a header value. Therefore, the headers of the web page become dynamic because of this value change. The <strong>Dynamic Headers</strong> settings available for the Get a Single Url Changing a Header Value are the following:</p>
+
+<ul>
+<li><a href="#dynamic-key-header">Dynamic Key Header</a></li>
+<li><a href="#dynamic-header-values">Dynamic Header Values</a></li>
+<li><a href="#default-headers">Default Headers</a></li>
+</ul>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h5 id='dynamic-key-header'>Dynamic Key Header</h5>
+<p>The <strong>Dynamic Key Header</strong> section shows the key header that receives the <a href="#dynamic-header-values">Dynamic Header Values</a> during the Test Case run. Test Cases are limited to one Dynamic Key Header. The following table lists the parameters of the Dynamic Key Header JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>key</strong></td>
+<td>The name of the Dynamic key HTTP Header of the Target URL.</td>
+<td>String</td>
+<td>For further information on Headers, see the <a href="&quot;https://developer.cdn.mozilla.net/en-US/docs/Web/HTTP/Headers&quot;">HTTP Header</a> list by MDN Web Docs.</td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of a Dynamic Key Header JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accept"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>For further information on the meaning of the Key Headers, see the <a href="&quot;https://developer.cdn.mozilla.net/en-US/docs/Web/HTTP/Headers&quot;">HTTP Headers</a> list page by the MDN Web Docs.</p>
+
+<p>To change the <strong>Dynamic Key Header</strong>, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Dynamic Key Header</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Key</strong> field appears.</li>
+<li>Edit the value of your Key Header in the <strong>Key</strong> field.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Dynamic Key Header is set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Dynamic Key Header successfully.
+</aside>
+
+<p>To learn how to set up the dynamic values of your Dynamic Key Header, see the <a href="#dynamic-header-values">Dynamic Header Values</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='dynamic-header-values'>Dynamic Header Values</h6>
+<p>The Dynamic Header Values section shows the JSON file with the values to set up for the Dynamic Key Header. The following table lists the parameters of the Dynamic Header Values JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>value</strong></td>
+<td>The value that the Dynamic Key HTTP Header receives in the Target URL server.</td>
+<td>String</td>
+<td>For further information on Headers, see the <a href="&quot;https://developer.cdn.mozilla.net/en-US/docs/Web/HTTP/Headers&quot;">HTTP Header</a> list by MDN Web Docs.</td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of a Dynamic Header Values JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/json"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/jpeg"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>For further information about the accepted values for your required Key Header, see the <a href="&quot;https://developer.cdn.mozilla.net/en-US/docs/Web/HTTP/Headers&quot;">HTTP Headers</a> list page by the MDN Web Docs.</p>
+
+<p>To change the <strong>Dynamic Header Values</strong>, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Dynamic Header Values</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Value</strong> field appears.</li>
+<li>Edit the value of your Dynamic Header Value in the <strong>Value</strong> field.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Dynamic Header Values are set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Dynamic Header Values successfully.
+</aside>
+
+<p>To learn how to set up the default headers for your Test Case, see the <a href="#default-headers">Default Headers</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='default-headers'>Default Headers</h6>
+<p>The <strong>Default Headers</strong> section shows the JSON file with the HTTP Headers needed to run the Test Case. Headers let the Jeeves and the web server pass additional information with an HTTP Request or Response. The following table lists the parameters of the Default Headers JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Notes</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>key</strong></td>
+<td>The name of the default HTTP Header of the Target URL.</td>
+<td>String</td>
+<td>For further information on Headers, see the HTTP Heade list by MDN Web Docs.</td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The value that the default HTTP Header receives in the Target URL server.</td>
+<td>String</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of a Default Headers JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accept"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"*/*"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Accept-Language"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en-US,en;q=0.5"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>To change the <strong>Default Headers</strong>, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Default Headers</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Key</strong> and <strong>Value</strong> fields appears.</li>
+<li>Edit the name of your Default Header in the <strong>Key</strong> field.</li>
+<li>Edit the Value of your Default Header in the <strong>Value</strong> field.</li>
+<li>If neccesary, Click the <strong>+</strong> plus button to add a new Default Header.
+</br>a. Repeat steps 3 and 4 .
+</br>b. Repeat step 4.a if necessary.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Default Headers are set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Default Headers successfully.
+</aside>
+
+<p>To set up dynamic host parameters for your Test Case, see the <a href="#host-parameters">Host Parameters</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h5 id='host-parameters'>Host Parameters</h5>
+<p>Test Cases created with the <strong>Get a Single Url From Different Hosts</strong> test the accessibility and speed of a web page to be loaded from different hosts. This means that the Test Cases test a Target URL located at different servers around the world. The <strong>Dynamic Host</strong> settings available for the <strong>Get a Single Url From Different Hosts</strong> are the following:</p>
+
+<ul>
+<li><a href="#dynamic-hosts">Dynamic Host</a></li>
+<li><a href="#path">Path</a></li>
+</ul>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='dynamic-hosts'>Dynamic Hosts</h6>
+<p>The <strong>Dynamic Hosts</strong> section of the Run Parameters shows the JSON file with the list of hosts from where the Test Case tries to test the Target URL accessibility and load speed. The following table lists the available parameters for the Dynamic Host JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>name</strong></td>
+<td>The name of the host to test  Target URL.</td>
+<td>String</td>
+</tr>
+<tr>
+<td><strong>host</strong></td>
+<td>The Target URL for the host to test</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<p>The following script is an example of a Dynamic Hosts JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wikipedia English"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"host"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://en.wikipedia.org"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wikipedia Spanish"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"host"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://es.wikipedia.org"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wikipedia Italian"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"host"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://it.wikipedia.org"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>To edit the <strong>Dynamic Host</strong> list, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Dynamic Host</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Name</strong> and <strong>Host</strong> fields appears.</li>
+<li>Edit the name of your Dynamic Host in the <strong>Name</strong> field.</li>
+<li>Edit the Dynamic Host URL in the <strong>Host</strong> field.
+</br>a. Click the <strong>+</strong> plus button to add a new Dynamic Host.
+</br>b. Repeat steps 3 and 4 .
+</br>c. Repeat step 4.a if necessary.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Dynamic Hosts are set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Dynamic Hosts successfully.
+</aside>
+
+<p>To learn how to set up the path for the Dynamic Host of a Test Case, see the <a href="#path">Path</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h6 id='path'>Path</h6>
+<p>The <strong>Path</strong> section of the Run Parameters shows the JSON file with the target section of the Target URL the Test Case tests in every Dynamic Host. The following table lists the available parameters for the Path JSON file:</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>path</strong></td>
+<td>The query and path parameters that complement the Target URL to test in the Dynamic Hosts.</td>
+<td>String</td>
+</tr>
+</tbody></table>
+
+<p>The following Script shows an example of a Path JSON file:</p>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/wiki/Special:Random"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div>
+<p>To change the <strong>Path</strong>, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Path</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Select the <strong>Form Edit</strong> option tab.
+</br>A page with the <strong>Path</strong> field appears.</li>
+<li>Enter the Path values for your Dynamic Hosts in the <strong>Path</strong> field.</li>
+<li>Click the <strong>Ok</strong> button to save your changes.
+</br>Your Path is set up.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have set up your Path successfully.
+</aside>
+
+<p>To set up dynamic host parameters for your Test Case, see the <a href="#body-parameter">Body Parameter</a> section.</p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h5 id='body-parameter'>Body Parameter</h5>
+<p>Test Cases created with the following Presets have a <strong>Body Parameter</strong>:</p>
+
+<ul>
+<li>Post to a Single URL</li>
+<li>Post to a Single URL Changing a Query Parameter</li>
+</ul>
+
+<p>The <strong>Body Parameter</strong> helps the Test Cases with the preceding Presets to Post values to a Target URL. Since each URL has different parameters, JSON files in this section may vary from Project to Project. </p>
+
+<p>To edit the <strong>Test Case Body</strong> parameter, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Body</strong> tab in the <strong>Run Parameters</strong> page.</li>
+<li>Click the <strong>Edit Form</strong> tab.</li>
+<li>Click the <strong>Open the File Explorer</strong> button.
+</br>A File explorer window appears.</li>
+<li>Select the JSON file with the body of your POST.</li>
+<li>Click the <strong>Open</strong> button.
+</br>The name of the file appears in the <strong>Submit your file</strong> section.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The JSON file with your POST body is updated.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have set up your Test Case Body successfully.
+</aside>
+
+<p>After you finish configuring the Run Parameters settings, you can further configure your Test Case to help you define:</p>
+
+<ul>
+<li><a href="#health-checks">Health Checks</a></li>
+<li><a href="#charts-and-indicators">Charts and Indicators</a></li>
+</ul>
+
+<p>See the sections listed above for further information. </p>
+
+<p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
+<h4 id='health-checks'>Health Checks</h4>
+<p><strong>Health Checks</strong> are analytical algorithms that diagnose the run results and trends of a Test Case. It helps to understand the results of a Test Case run by presenting graphical representations of the results with graphs and icons. Three types of health checks exist, each one representing an aspect of the run results:</p>
+
+<ul>
+<li><a href="#average-response-time">Average Response Time</a></li>
+<li><a href="#succeeded-vs-failed">Succeeded vs Failed</a></li>
+<li><a href="#worst-response-time">Worst Response Time</a></li>
+</ul>
+
+<p>See the sections listed above for further information. </p>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h5 id='average-response-time'>Average Response Time</h5>
+<p>The <strong>Average Response Time</strong> health check shows the time each request took to be completed. The health check represents the results through a linear graph and it shows a <strong>BAD</strong> red sign if the Average Response Time is higher or equal to the specified time. </p>
+
+<aside class="notice"> By default, the Average Response Time health check is set up to 800 microseconds(MS).
+</aside>
+
+<p>The Average Response Time graph and sign appear like the following image:</p>
+
+<p><img src="images/avg-response-time-0bf86882.png" alt="Average Response Time chart"></p>
+
+<p>To change the expected <strong>Average Response Time</strong> for a Test Case run, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Health Checks</strong> tab of the <strong>Testcase Settings</strong> page.
+</br>The Health Checks page appears.</li>
+<li>Select how to measure the Average Response Time:
+</br>a. Change the Average Response Time expected microseconds (<strong>MS</strong>) result field, or
+</br>b. Change the <strong>times</strong> each response time increments with respect to the  Average Response Time obtained in the previous Test Case run.</li>
+<li>Click the <strong>Ok</strong> button in the bottom right corner of the page.
+</br>Your Average Response Time health check is updated.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have set up your Average Response Time health check successfully.
+</aside>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h5 id='succeeded-vs-failed'>Succeeded vs Failed</h5>
+<p>The <strong>Succeeded vs Failed</strong> health check shows the percentage of requests that failed or succeeded to obtain a response. The health check represents the results through a bar graph and shows a <strong>BAD</strong> red sign if the percentage of requests that failed to obtain a result is higher or equal to the specified percentage.</p>
+
+<aside class="notice"> By default, the Succeeded vs Failed health check percentage is set up to %50.
+</aside>
+
+<p>The Succeeded vs Failed graph and sign appear like the following image: </p>
+
+<p><img src="images/succ-failed-2aaf58fa.png" alt="Succeeded vs Failed chart"></p>
+
+<p>To change the expected <strong>Succeeded vs Failed</strong> percentage for a Test Case run, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Health Checks</strong> tab of the <strong>Testcase Settings</strong> page.
+</br>The <strong>Health Checks</strong> page appears.</li>
+<li>Select how to measure the Succeeded vs Failed percentage.
+</br>a. Change the Succeeded vs Failed expected percentage (<strong>%</strong>)  result field, or
+</br>b. Change the Succeeded vs Failed <strong>percentage</strong> increment of the run compared to the Succeeded vs Failed percentage obtained in the previous Test Case run.</li>
+<li>Click the <strong>Ok</strong> button in the bottom right corner of the page.
+</br>Your Succeeded vs Failed health check is updated.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have set up your Succeeded vs Failed health check successfully.
+</aside>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h5 id='worst-response-time'>Worst Response Time</h5>
+<p>The <strong>Worst Response Time</strong> health check shows the best and worst time taken for a request to obtain a response. The health check represents the results through a bar graph and shows a <strong>BAD</strong> red sign if the worst time to obtain a result is higher or equal to the specified time.</p>
+
+<aside class="notice"> By default, the Worst Time Response health check is set up to 1200 microseconds (MS).
+</aside>
+
+<p>The Worst Time Response graph and sign appear like the following image:</p>
+
+<p><img src="images/worst-response-time-f83f81f9.png" alt="Worst Response Time chart"></p>
+
+<p>To change the expected <strong>Worst Response Time</strong> for a Test Case run, follow these steps:</p>
+
+<ol>
+<li>Select the <strong>Health Checks</strong> tab of the <strong>Testcase Settings</strong> page.
+</br>The <strong>Health Checks</strong> page appears.</li>
+<li>Select how to measure the Worst Response Time.
+</br>a. Change the Worst Response Time expected microseconds (<strong>MS</strong>)  result field, or
+</br>b. Change the <strong>times</strong> each response time increments with respect to the  Average Response Time obtained in the previous Test Case run.</li>
+<li>Click the <strong>Ok</strong> button in the bottom right corner of the page.
+</br>Your Worst Response Time health check is updated.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you set up your Worst Response Time health check successfully.
+</aside>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h4 id='charts-and-indicators'>Charts and indicators</h4>
+<p>The <strong>Charts and Indicators</strong> section shows the parameters that define the times in which a Test Case considers a request response is fast, slow, or fails to complete. The following list contains the Chart and Indicators parameters for the Test Cases:</p>
+
+<ul>
+<li><strong>Response Time Lower Bound:</strong> The lowest expected time in which a request gets a response.</li>
+<li><strong>Response Time Higher Bound:</strong> The highest expected time in which a request gets a response.</li>
+<li><strong>Response Timeout:</strong> The time in which a request is close because it did not get a response. </li>
+</ul>
+
+<p>To know how to interpret the charts created with these parameters, see the <a href="#test-case-insights">Test Case Insights</a> and the <a href="#test-case-reports">Test Case Reports</a> sections.</p>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h4 id='rename-a-test-case'>Rename a Test Case</h4>
+<p>To <strong>rename a Test Case</strong>, follow these steps:</p>
+
+<ol>
+<li>Click on the <strong>Testcase Settings</strong> button on the top right corner of the page.
+</br>The <strong>Testcase Settings</strong> page appears.</li>
+<li>Select the <strong>Rename Testcase</strong> tab.
+</br>A <strong>Name</strong> field appears.</li>
+<li>Enter the new name for the Test Case in the <strong>Name</strong> field.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Testcase Home page displays the new name on the top left corner of the Testcase Home page.</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have changed the name of the Test Case successfully.
+</aside>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h4 id='delete-a-test-case'>Delete a Test Case</h4>
+<p>To <strong>delete a Test Case</strong>, follow these steps:</p>
+
+<ol>
+<li>Click on the <strong>Testcase Settings</strong> button on the top right corner of the page.
+</br>The <strong>Testcase Settings</strong> page appears.</li>
+<li>Select the <strong>Other Settings</strong> tab.
+</br>The <strong>Delete this testcase</strong> radio button appears.</li>
+<li>Enable the <strong>Delete this testcase</strong> radio button</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Testcase is deleted and the Project Home page appears with the remaining Test Cases. </li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have deleted the Test Case successfully.
+</aside>
+
+<p><a href="#test-case-settings" class="go-back"> ← Go back to the Test Case Settings section </a></p>
+<h3 id='run-a-test-case'>Run a Test Case</h3>
+<p>Once you set up your Test Case with the configuration of your Web page or Web App, you are able to run your Test Case. To <strong>run a Test Case</strong>, click the <strong>Run</strong> button below the name of the Test Case.</p>
+
+<p><img src="images/run-button-8f34a65d.png" alt="Run Test Case button"></p>
+
+<p>To <strong>stop a Test Case</strong>, click the <strong>Stop</strong> button below the name of the Test Case. </p>
+
+<p><img src="images/stop-button-dd5e0125.png" alt="Stop Test Case button"></p>
+
+<p>After you run a Test Case for the first time, the Test Case Home page presents you the following sections with information about the last 20 runs of the Test Case:</p>
+
+<ul>
+<li><a href="#test-case-logs">Test Case Logs</a></li>
+<li><a href="#test-case-insights">Test Case Insights</a></li>
+<li><a href="#test-case-reports">Test Case Reports</a></li>
+</ul>
+
+<p>To learn how to interpret the information of each section, see the sections above.</p>
+
+<p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home Page section </a></p>
+<h3 id='test-case-logs'>Test Case Logs</h3>
+<p>When you run a Test Case, the <strong>Logs</strong> section of your Test Case Home page shows you the activities in progress in real-time. You can check the Logs after the run is finished. </p>
+
+<p>See the sections of a Log in the following list to understand how to read Logs:</p>
+
+<ul>
+<li><a href="#initializing">Initializing</a></li>
+<li><a href="#running">Running</a></li>
+<li><a href="#finalizing">Finalizing</a></li>
+<li><a href="#delivering">Delivering</a></li>
+</ul>
+
+<p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home Page section </a></p>
+<h4 id='initializing'>Initializing</h4>
+<p>When you run a Test Case, Jeeves starts the following three activities:</p>
+
+<ol>
+<li><strong>Execute Run Command:</strong> Jeeves starts the Run command. The Run command launches a series of background activities to create the Simulation Work of the Test Case.</li>
+<li><strong>Create the Simulation Work:</strong> Jeeves creates the Simulation Work for the Test Case. Jeeves takes the Project and Test Case parameters to create the Simulation Work.</li>
+<li><strong>Running the Simulation Work:</strong> Jeeves runs the Simulation Work created in the preceding step. Once the Simulation Work is running without problems, the Test Case iterations start running.</li>
+</ol>
+
+<p>The following script is an example of how the Initializing section appears in the Logs:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>[RUN AGENT] Joining the pending queue...   # 1 second after launch
+[RUN AGENT] Executing run command...   # 2 seconds after launch
+[RUN AGENT] Run command successfully executed
+Tue Jun 01 17:37:43 UTC 2021 [SIMULATION WORKER] Creating simulation work...
+Tue Jun 01 17:37:45 UTC 2021 [SIMULATION WORKER] 
+      project = dow-jones
+      testcase = path-parameter
+      preset = GetASingleUrlChangingAPathParameter   
+      total peers = 1
+      peer number = 0
+
+Tue Jun 01 17:37:45 UTC 2021 [SIMULATION WORKER] Loading configuration...
+Tue Jun 01 17:37:47 UTC 2021 [SIMULATION WORKER] Running simulation...
+Tue Jun 01 17:37:48 UTC 2021 [SIMULATION WORKER] [SIMULATION WORKER] Still alive
+Simulation GetASingleUrlChangingAPathParameter started...
+Tue Jun 01 17:37:53 UTC 2021 [SIMULATION WORKER] [SIMULATION WORKER] Still alive
+</code></pre></div>
+<p>To understand how Logs report the running simulation, see the <a href="#running">Running</a> section.</p>
+
+<p><a href="#test-case-logs" class="go-back"> ← Go back to the Test Case Logs section </a></p>
+<h4 id='running'>Running</h4>
+<p>Once Jeeves created the Simulation Work with the Project and Test Case parameters, the Test Case Simulation Work starts. Jeeves creates reports with the Test Case run health every five seconds. The reports include the following information:</p>
+
+<ul>
+<li><strong>Timestamp:</strong> The Timestamp shows the time when the log is registered, along with the seconds that have passed since the beginning of the simulation. </li>
+<li><strong>Request Results:</strong>  The Request Results shows the aspects the Test Case is testing on the Target URL, along with the count of how many requests have succeeded <strong>(OK)</strong> and how many failed <strong>(KO)</strong>.</li>
+<li><strong>Test Case Preset:</strong> The Test Case Preset shows the name of the Test Case Preset.</li>
+<li><strong>Simulation Status:</strong> The Simulation Status shows the percentage of requested completed along with the following classification:
+
+<ul>
+<li><strong>waiting:</strong> The amount of requests waiting to be served by the Simulation Work.</li>
+<li><strong>active:</strong> The amount of requests being served by the Simulation Work at the moment.</li>
+<li><strong>done:</strong> The amount of requests that have been served by the Simulation Work until this moment.</li>
+</ul></li>
+</ul>
+
+<p>The following script is an example of how the Running section appears in the Logs:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>================================================================================
+2021-06-01 17:38:00                                          10s elapsed
+---- Requests ------------------------------------------------------------------
+&gt; Global                                                   (OK=14     KO=0     )
+&gt; newswires                                                (OK=4      KO=0     )
+&gt; factiva                                                  (OK=3      KO=0     )
+&gt; risk                                                     (OK=7      KO=0     )
+
+---- GetASingleUrlChangingAPathParameter ---------------------------------------
+[##-------------                                                           ]  2%
+          waiting: 400    / active: 86     / done: 14    
+================================================================================
+</code></pre></div>
+<p>to understand how Logs report the ending of the running simulation, see the <a href="#finalizing">Finalizing</a> section.</p>
+
+<p><a href="#test-case-logs" class="go-back"> ← Go back to the Test Case Logs section </a></p>
+<h4 id='finalizing'>Finalizing</h4>
+<p>Once Jeeves completed the total amount of requests in the Simulation Work, the Log presents the results obtained. The following list shows the information registered in this section of the Log, where the parameters show the Total Amount of Request per category, along with the Amount of Succeeded Request (OK) and the Amount of Failed Request (KO) per category:</p>
+
+<ul>
+<li><strong>Time taken to complete:</strong> the time that the Simulation Work took to complete the requests. </li>
+<li><strong>request count:</strong> The amount of  requests the Simulation Work took.</li>
+<li><strong>Min response time:</strong> The lowest response time a request got.</li>
+<li><strong>Max response time:</strong> The highest response time a request got.</li>
+<li><strong>Mean response time:</strong> The total response time divided by the number of requests.</li>
+<li><strong>Std deviation:</strong> The amount of dispersion of values from the mean response time.</li>
+<li><strong>Response time 50th percentile:</strong> The amount of requests served when the Simulation Work is at 50% progress time.</li>
+<li><strong>Response time 75th percentile:</strong> The amount of requests served when the Simulation Work is at 75% progress time.</li>
+<li><strong>Response time 95th percentile:</strong> The amount of requests served when the Simulation Work is at 95% progress time.</li>
+<li><strong>Response time 99th percentile:</strong> The amount of requests served when the Simulation Work is at 99% progress time.</li>
+<li><strong>Mean request/sec:</strong> The average time a request takes to complete.</li>
+<li><strong>T &lt; response time lower bound in ms:</strong> The amount of requests completed under the given Response Time Lower Bound.</li>
+<li><strong>response time lower bound in ms &lt; T &lt; response time higher bound in ms:</strong> The amount of request completed between the given Response Time Lower Bound and the Response Time Higher Bound.</li>
+<li><strong>T &gt; response time higher bound in ms:</strong> The amount of request completed over the given Response Time higher Bound.</li>
+<li><strong>Failed:</strong> The amount of request that failed to be completed. </li>
+</ul>
+
+<p>To know more about the Response Time Bounds, see the <a href="#charts-and-indicators">Charts and Indicators</a> section.</p>
+
+<p>The following script is an example of how the Finalizing section appears in the Logs: </p>
+<div class="highlight"><pre class="highlight plaintext"><code>Simulation GetASingleUrlChangingAPathParameter completed in 50 seconds
+Parsing log file(s)...
+Parsing log file(s) done
+Generating reports...
+
+================================================================================
+---- Global Information --------------------------------------------------------
+&gt; request count                                        340 (OK=340    KO=0     )
+&gt; min response time                                    373 (OK=373    KO=-     )
+&gt; max response time                                   6174 (OK=6174   KO=-     )
+&gt; mean response time                                  1513 (OK=1513   KO=-     )
+&gt; std deviation                                       1102 (OK=1102   KO=-     )
+&gt; response time 50th percentile                       1139 (OK=1139   KO=-     )
+&gt; response time 75th percentile                       2277 (OK=2277   KO=-     )
+&gt; response time 95th percentile                       3705 (OK=3705   KO=-     )
+&gt; response time 99th percentile                       4593 (OK=4593   KO=-     )
+&gt; mean requests/sec                                    6.8 (OK=6.8    KO=-     )
+---- Response Time Distribution ------------------------------------------------
+&gt; t &lt; 800 ms                                           155 ( 46%)
+&gt; 800 ms &lt; t &lt; 1200 ms                                  16 (  5%)
+&gt; t &gt; 1200 ms                                          169 ( 50%)
+&gt; failed                                                 0 (  0%)
+================================================================================
+</code></pre></div>
+<p>To understand how logs report the creation of Test Case Reports, see the <a href="#delivering">Delivering</a> section.</p>
+
+<p><a href="#test-case-logs" class="go-back"> ← Go back to the Test Case Logs section </a></p>
+<h4 id='delivering'>Delivering</h4>
+<p>Once the Simulation Work delivers the results in the Finalizing section of the Log, the Simulation Work finishes the Test Case run by creating the Test Case Reports. This last section of the logs explains that the report about the Test Case run is created and then finalizes the Simulation Work. </p>
+
+<p>The following script is an example of how the Delivering  section appears in the Logs: </p>
+<div class="highlight"><pre class="highlight plaintext"><code>Tue Jun 01 17:38:41 UTC 2021 [SIMULATION WORKER] Finished simulation
+Tue Jun 01 17:38:41 UTC 2021 [SIMULATION WORKER] Calling on success task...
+Tue Jun 01 17:38:41 UTC 2021 [SIMULATION WORKER] Saving report...
+Tue Jun 01 17:38:42 UTC 2021 [SIMULATION WORKER] Saving statistics...
+Tue Jun 01 17:38:42 UTC 2021 [SIMULATION WORKER] Finished on success task
+Tue Jun 01 17:38:42 UTC 2021 [SIMULATION WORKER] Terminated
+SLF4J: The requested version 1.7.16 by your slf4j binding is not compatible with [1.6]
+SLF4J: See http://www.slf4j.org/codes.html#version_mismatch for further details.
+[LOGGING WORKER] The process terminated
+[LOGGING WORKER] Calling on termination task...
+[RUN AGENT] The simulation took 1 min 0 sec
+[RUN AGENT] Saving log...
+</code></pre></div>
+<p>To learn how to interpret Test Case run charts and reports, see the <a href="#test-case-insights">Test Case Insights</a> and the <a href="#test-case-reports">Test Case Reports</a> sections.</p>
+
+<p><a href="#test-case-logs" class="go-back"> ← Go back to the Test Case Logs section </a></p>
+<h3 id='test-case-insights'>Test Case Insights</h3>
+<p>When you run a Test Case, the <strong>Insight</strong> section of your Test Case Home page shows you two sections with charts: </p>
+
+<ul>
+<li><p><strong>Last Run:</strong> The Last Run chart shows the results of the amount of requests run. The chart consist of the following four bars:</p>
+
+<ul>
+<li><strong>T &lt; response time lower bound value in ms:</strong> The amount of requests completed under the given Response Time Lower Bound.</li>
+<li><strong>response time lower bound in ms &lt; T &lt; response time higher bound value in ms:</strong> The amount of requests completed between the given Response Time Lower Bound and the Response Time Higher Bound.</li>
+<li><strong>T &gt; response time higher bound value in ms:</strong> The amount of requests completed over the given Response Time higher Bound.</li>
+<li><strong>Failed:</strong> The amount of requests that failed to be completed. 
+<aside class="notice"> To know more about the Response Time Bounds parameters in the Last Run chart, see the <a href="#charts-and-indicators">Charts and Indicators</a> section.
+</aside></li>
+</ul></li>
+<li><p><strong>Last 20 Runs:</strong> The last 20 Runs chart shows the results obtained in the Health Checks of  the last 20 Test Case runs. </p>
+
+<ul>
+<li><a href="#average-response-time">Average Response Time</a></li>
+<li><a href="#succeeded-vs-failed">Succeeded vs Failed</a></li>
+<li><a href="#worst-response-time">Best to Worst Response Time</a>
+<aside class="notice">  To know more about the Last 20 Runs charts, see the <a href="#health-checks">Health Checks</a> section.
+</aside></li>
+</ul></li>
+</ul>
+
+<p>The following image shows the Last Run and Last 20 Runs charts in the Insight section:</p>
+
+<p><img src="images/test-case-insights-9cb67135.png" alt="Test Case Insights screenshot"></p>
+
+<p>To learn how to interpret the reports that Jeeves creates after each Test Case run, see the <a href="#test-case-reports">Test Cases Reports</a> section.</p>
+
+<p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home Page section </a></p>
+<h3 id='test-case-reports'>Test Case Reports</h3>
+<p>Jeeves is built over the <a href="https://gatling.io/docs/current/">Gatling Open Source Library</a>. Gatling helps Jeeves to create the reports and charts to show the results obtained during the Test Case Run. When a Test Case run is completed, Jeeves and Gatling create a report page, you can check all the reports from previous Test Case Runs ordered by date in the <strong>Reports</strong> section of a Test Case Home page. </p>
+
+<p>To open a <strong>Report</strong>, follow these steps:</p>
+
+<ol>
+<li>Go to the <strong>Reports</strong> section at the bottom of the Test Case Home page.</li>
+<li>Select the Test Case run date you want to check the report.</li>
+<li>Click on the link with the date you selected.<br>
+The link redirects you to the <strong>Gatling Stats</strong> Page. </li>
+</ol>
+
+<p>The Gatling Stats page contains the statistics, charts, and indicators obtained during a Test Case run. The Gatling Stats page presents the results in two sections:</p>
+
+<ul>
+<li><strong>Global:</strong> Shows the overall results of the Test Case run.</li>
+<li><strong>Details:</strong> Shows the specific results of a Test Case run, useful for when Test Cases test multiple Target URLs or contain other types of <a href="#dynamic-run-parameters">Dynamic Run Parameters</a>.</li>
+</ul>
+
+<p>Both sections of the Gatling Stats page can contain the following sections, depending of the results obtained during the run:</p>
+
+<ul>
+<li><a href="#indicators">Indicators</a></li>
+<li><a href="#number-of-request">Number of Request</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#erros">Erros</a></li>
+<li><a href="#active-users-along-the-simulation">Active Users along the Simulation</a></li>
+<li><a href="#response-time-distribution">Response Time Distribution</a></li>
+<li><a href="#response-time-percentiles-ocer-time-ok">Response Time Percentiles over Time (OK)</a></li>
+<li><a href="#number-of-requests-per-second">Number of Request per Second</a></li>
+<li><a href="#number-of-responses-per-second">Number of Responses per Second</a></li>
+<li><a href="#response-time-againts-rps">Response Time against RPS</a></li>
+</ul>
+
+<p>To understand the information and charts each one shows, see the next sections.</p>
+
+<p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home Page section </a></p>
+<h4 id='indicators'>Indicators</h4>
+<p>The <strong>Indicators</strong> chart shows the amount of requests that succeeded and failed, based on the fixed values of Response Bound Time(<strong>t</strong>). 
+To edit the Response Bound Time values, see the <a href="#charts-and-indicators">Charts and Indicators</a> section.</p>
+
+<p>The Indicators section shows the information in two graphs:</p>
+
+<ul>
+<li><strong>Bar Chart:</strong> Shows the Number of request the Test Case did, organized in the following four bars: 
+
+<ul>
+<li><strong>T &lt; response time lower bound in ms:</strong> The amount of requests completed under the given Response Time Lower Bound.</li>
+<li><strong>response time lower bound in ms &lt; T &lt; response time higher bound in ms:</strong> The amount of requests completed between the given Response Time Lower Bound and the Response Time Higher Bound.</li>
+<li><strong>T &gt; response time higher bound in ms:</strong> The amount of requests completed over the given Response Time higher Bound.</li>
+<li><strong>Failed:</strong> The amount of requests that failed to be completed. </li>
+</ul></li>
+<li><strong>Pie Chart:</strong> Shows the percentage of Succeeded and Failed requests the Test Case did. </li>
+</ul>
+
+<p>The following image shows an example of an Indicators chart: </p>
+
+<p><img src="images/indicators-cd0da89d.png" alt="Indicators Reports chart"></p>
+
+<p>To learn how to interpret the information and chart about Number of Request, see the <a href="#number-of-request">Number of Request</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='number-of-request'>Number of Request</h4>
+<p>The <strong>Number of Request</strong> chart shows the information about the number of requests that succeeded or failed during the Test Case. The chart represents the information using the following colors:
+* <strong>Blue Circles:</strong> The amount of requests that succeeded to get a response.
+* <strong>Red Circles:</strong> The amount of requests that failed to get a response.</p>
+
+<p>The following image shows an example of a Number of Request chart:</p>
+
+<p><img src="images/number-of-request-1a1c69fd.png" alt="Number of Request Reports chart"></p>
+
+<p>To learn how to interpret the statistics results of the Test Case run, see the <a href="#statistics">Statistics</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='statistics'>Statistics</h4>
+<p>The <strong>Statistics</strong> table shows the results obtained in the Test Case run. The table shows the information organized in the following columns:</p>
+
+<ul>
+<li><strong>Request:</strong>  The name of the request the information in the row belongs to.</li>
+<li><strong>Executions:</strong> The specific information about the number of requests that succeeded and failed. The Executions column is divided into the following columns:
+
+<ul>
+<li><strong>Total:</strong> The total number of requests, succeeded and failed, sent to the Target URL.</li>
+<li><strong>OK:</strong> The total number of requests that succeeded to obtain a response.</li>
+<li><strong>KO:</strong> The total number of requests that failed to obtain a response.</li>
+<li><strong>%KO:</strong> The percentage of requests that failed to obtain a response.</li>
+<li><strong>Cnt/s:</strong> The number of requests in a second.</li>
+</ul></li>
+<li><strong>Response Time (ms):</strong> The specific information about the response time that requests took to complete. The Response Time <strong>(ms)</strong> column is divided into the following columns:
+
+<ul>
+<li><strong>Min:</strong> The minimum amount of requests served during the Simulation Work time.</li>
+<li><strong>50th Pct:</strong> The amount of requests served when the Simulation Work is at 50% progress time.</li>
+<li><strong>75th Pct:</strong> The amount of requests served when the Simulation Work is at 75% progress time.</li>
+<li><strong>95th Pct:</strong> The amount of requests served when the Simulation Work is at 95% progress time.</li>
+<li><strong>99th Pct:</strong> The amount of requests served when the Simulation Work is at 99% progress time.</li>
+<li><strong>Max:</strong> The maximum amount of requests served during the Simulation Work time.</li>
+<li><strong>Mean:</strong> The average time a request takes to complete.</li>
+<li><strong>Std Dev:</strong> The amount of dispersion of values from the mean response time.</li>
+</ul></li>
+</ul>
+
+<p>The following image shows an example of the Statistics table: </p>
+
+<p><img src="images/statistics-b2190b03.png" alt="Statistics Reports table"></p>
+
+<p>To learn how to interpret the errors obtained during the Test Case run, see the <a href="#errors">Errors</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='errors'>Errors</h4>
+<p>The <strong>Errors</strong> table lists the errors obtained during the Test Case run. The table lists the information organized in the following columns: </p>
+
+<ul>
+<li><strong>Errors:</strong> The Error code obtained in the run.</li>
+<li><strong>Count:</strong> The amount of times the error occurred.</li>
+<li><strong>Percentage:</strong> The percentage the error occurred, compared to other errors.</li>
+</ul>
+
+<p>The following image is an example of the Errors table:</p>
+
+<p><img src="images/errors-24b14956.png" alt="Errors Reports table"></p>
+
+<p>To learn how to interpret the Active Users along the Simulation chart and information of the Test Case run, see the <a href="#active-users-along-the-simulation">Active Users along the Simulation</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='active-users-along-the-simulation'>Active Users along the Simulation</h4>
+<p>The <strong>Active Users along the Simulation</strong> chart shows the amount of testing users that were active during the simulation run. The Active Users along the Simulation chart contains the following information:</p>
+
+<ul>
+<li><strong>Blue Line:</strong> The name of the Test Case Preset.</li>
+<li><strong>Yellow line:</strong> The number of active users during the simulation</li>
+<li><strong>Number of Active Users:</strong> The number of active users in the simulation, represented by the Y axis.</li>
+<li><strong>Time:</strong> The timestamp when the user was active, represented by the X axis.</li>
+</ul>
+
+<p>The following image is an example of the Active Users along the Simulation chart:</p>
+
+<p><img src="images/active-users-along-the-simulation-90d7220c.png" alt="Active Users along the Simulation Reports Chart"></p>
+
+<p>To learn how to interpret the Response Time Percentiles over Time chart and information, see the <a href="#response-time-distribution">Response Time Distribution</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='response-time-distribution'>Response Time Distribution</h4>
+<p>The <strong>Response Time Distribution</strong> chart shows the percentage of successful and failed requests grouped by the time it took them to complete. The Response Time Distribution chart contains the following information: </p>
+
+<ul>
+<li><strong>Blue Bar:</strong> The percentage of successful requests in a time group.</li>
+<li><strong>Red Bar:</strong> The percentage of failed requests in a time group.</li>
+<li><strong>Percentage of Request:</strong> The percentage of request of each bar, represented by the Y axis.</li>
+<li><strong>Time:</strong>  The time groups in which the requests completed, represented by the X axis.</li>
+</ul>
+
+<p>The following image is an example of the Response Time Distribution chart:</p>
+
+<p><img src="images/response-time-distribution-71a3e6e6.png" alt="Response Time Distribution Reports Chart"></p>
+
+<p>To learn how to interpret the Response Time Distribution chart and information, see the <a href="#response-time-percentiles-over-time-ok">Response Time Percentiles over Time (OK)</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='response-time-percentiles-over-time-ok'>Response Time Percentiles over Time (OK)</h4>
+<p>The <strong>Response Time Percentiles over Time (OK)</strong> shows a variety of response time percentiles over time, but only for successful requests. The Response Time Percentiles over Time (OK) chart contains the following information:</p>
+
+<ul>
+<li><strong>Yellow Line:</strong> The amount of Active Users.</li>
+<li><strong>Color Spikes:</strong> The Percentile of response times. Each color represents a different percentile.</li>
+<li><strong>Response Time (ms):</strong> The time response time, represented by the Y axis.</li>
+<li><strong>Time:</strong> The timestamp of the request response, represented by the X axis.</li>
+</ul>
+
+<p>The following image is an example of the Response Time Percentiles over Time (OK) chart:</p>
+
+<p><img src="images/response-time-percentiles-over-time-e17bf70f.png" alt="Response Time Percentiles over Time(OK) Reports chart"></p>
+
+<p>To learn how to interpret the Number of Requests per Second chart and information, see the <a href="#number-of-requests-per-second">Number of Requests per Second</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='number-of-requests-per-second'>Number of Requests per Second</h4>
+<p>The <strong>Number of Requests per Second</strong> chart shows the amount of requests sent per second over time. The Number of Request per Second chart contains the following information:</p>
+
+<ul>
+<li><strong>Yellow Line:</strong> The amount of Active Users.</li>
+<li><strong>Number of Requests:</strong> The amount of requests sent, represented by the Y axis.</li>
+<li><strong>Time:</strong>  The time frame of the Test Case run, represented by the X axis.</li>
+</ul>
+
+<p>The following image is an example of the Number Request per Second chart:</p>
+
+<p><img src="images/number-of-request-per-second-e8cda4e0.png" alt="Number of Requests per Second Reports chart"></p>
+
+<p>To learn how to interpret the Number of Responses per Second chart and information, see the <a href="#number-of-responses-per-second">Number of Responses per Second</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='number-of-responses-per-second'>Number of Responses per Second</h4>
+<p>The <strong>Number of Responses per Second</strong> chart shows the amount of responses received per second over time, regardless of their status. The Number of Request per Second chart contains the following information:</p>
+
+<ul>
+<li><strong>Yellow Line:</strong> The amount of Active Users.</li>
+<li><strong>Green Spikes:</strong> The amount of Succeeded Responses (OK).</li>
+<li><strong>Red Spikes:</strong> The amount of Failed Responses (KO).</li>
+<li><strong>Number of Responses:</strong> The amount of requests sent, represented by the Y axis.</li>
+<li><strong>Time:</strong> The time frame of the Test Case run, represented by the X axis.</li>
+</ul>
+
+<p>The following image is an example of the Number of Responses per Second chart:</p>
+
+<p><img src="images/number-of-responses-per-second-62cb36f7.png" alt="Number of Responses per Second Reports chart"></p>
+
+<p>To learn how to interpret the Response Time against Global RPS chart and information, see the <a href="#response-time-against-global-rps">Response Time against Global RPS</a> section.</p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h4 id='response-time-against-global-rps'>Response Time against Global RPS</h4>
+<p>The <strong>Response Time against Global RPS</strong> chart shows how the response time for the selected request is distributed, based on the amount of requests at the same time. The Response Time against Global RPS chart contains the following information:</p>
+
+<ul>
+<li><strong>Blue Dots:</strong> Succeeded requests.</li>
+<li><strong>Red Dots:</strong> Failed Requests.</li>
+<li><strong>Response Time:</strong> The overall response time, represented by the Y axis.</li>
+<li><strong>Global Number of Requests per Second:</strong> The amount of requests that got a response in the given Response Time, represented by the X axis.</li>
+</ul>
+
+<p>The following image is an example of the Responses Time against Global RPS chart:</p>
+
+<p><img src="images/response-time-againts-global-rps-112843e5.png" alt="Response Time againts Global RPS Reports chart"></p>
+
+<p>To know how to run multiple Test Cases sequentially, see the <a href="#jobs">Jobs</a> section. </p>
+
+<p><a href="#test-case-reports" class="go-back"> ← Go back to the Test Case Reports section </a></p>
+<h1 id='jobs'>Jobs</h1>
+<p>Jeeves Projects can have Jobs. <strong>Jobs</strong> enable you to automate your testing tasks, setting an expected successful responses percentage, running all the Project Test Cases in a sequence without you having to initialize each Test Case. If the results obtained seem that they will not reach the expected percentage during the running of a Job, the Job run stops and delivers a <strong>BAD</strong> status, warning you that your Project availability is not as expected. </p>
+
+<p>Jobs contain the following information: </p>
+
+<ul>
+<li><strong>Execution notes:</strong> The name of the Job.</li>
+<li><strong>total tasks</strong>: The number of Test Cases the Job will run. Not editable.</li>
+<li><strong>required score:</strong> The expected percentage of successful Test Cases.</li>
+</ul>
+
+<p>To know more about the Jobs parameters, see the <a href="#job-details">Job Details</a> section.</p>
+
+<p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home page section </a></p>
+<h2 id='create-a-job'>Create a Job</h2>
+<p>To create a Job for a project, you can choose one of the following options:</p>
+
+<ul>
+<li><a href="#generate-a-bash-script">Generate a Bash Script</a></li>
+<li><a href="#manual-run">Manual Run</a></li>
+</ul>
+
+<p>See the sections above to learn how to run a Job.</p>
+
+<p><a href="#jobs" class="go-back"> ← Go back to the Jobs section </a></p>
+<h3 id='generate-a-bash-script'>Generate a Bash Script</h3>
+<p>To <strong>create and run a Job with a Bash Script</strong>, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> profile from the <strong>Jeeves Home page</strong>.
+</br>The selected <strong>Project Home page</strong> appears.</li>
+<li>On your <strong>Project Home page</strong>, select the Jobs tab.
+</br>The <strong>Jobs</strong> page appears.</li>
+<li>Click the <strong>+ Create</strong> button on the top right corner of the <strong>Project Home page</strong>.
+</br>The <strong>New Job</strong> page appears.</li>
+<li>Enter the purpose of the new Job in the <strong>Execution Notes</strong> field. </li>
+<li>Enter the expected successful Test Cases percentage in the <strong>Required Score</strong> field.</li>
+<li>Click the <strong>Generate Bash Script</strong> button.
+</br>The auto-generated <strong>Bash Script</strong> appears.</li>
+<li>Copy the auto-generated <strong>Bash Scrip</strong>t.</li>
+<li>Open your computer Terminal.</li>
+<li><p>Create a <strong><code>.sh</code></strong> file with the following command:
+<code>
+touch name-of-your-file.sh
+</code></p></li>
+<li><p>Open the file in your Terminal editor with the following command:
+<code>
+nano name-of-your-file.sh
+</code></p></li>
+<li><p>Paste the auto-generated <strong>Bash Script</strong> to the Terminal.</p></li>
+<li><p>Save the Bash Script, press the <strong><code>CONTRL + O</code></strong> keys.</p></li>
+<li><p>Confirm the file name, press the <strong><code>ENTER</code></strong> key.</p></li>
+<li><p>Exit the Terminal editor, press the <strong><code>CONTRL + X</code></strong> keys.</p></li>
+<li><p>Run the Bash Script with the following command:
+<code>
+sh the-name-of-your-file.sh
+</code></p></li>
+</ol>
+
+<p></br>The Job starts running and appears in the Project Jobs page.</p>
+
+<aside class="success"> After following the preceding steps, you have run a Job with a Bash Script successfully. 
+</aside>
+
+<p>To learn how to do a manual run of a Job, check the <a href="#manual-run">Manual Run</a> section.</p>
+
+<p><a href="#jobs" class="go-back"> ← Go back to the Jobs section </a></p>
+<h3 id='manual-run'>Manual Run</h3>
+<p>To <strong>create and run a Job</strong> with Jeeves, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> profile from the <strong>Jeeves Home page</strong>.
+</br>The selected <strong>Project Home page</strong> appears.</li>
+<li>On your <strong>Project Home pag</strong>e, select the <strong>Jobs</strong> tab.
+</br>The <strong>Jobs</strong> page appears.</li>
+<li>Click the <strong>+ Create</strong> button on the top right corner of the Project Home page*<em>.
+</br>The **New Job</em>* page appears.</li>
+<li>Enter the purpose of the new Job in the <strong>Execution Notes</strong> field. </li>
+<li>Enter the expected successful Test Cases percentage in the <strong>Required Score</strong> field.</li>
+<li>Click the <strong>Manual Run</strong> button.
+</br>The Job starts running and the Job Details page appears.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have done a Manual Run successfully. 
+</aside>
+
+<p>To learn about the information and the status of a Job run, see the <a href="#job-details">Job Details</a> section.</p>
+
+<p><a href="#jobs" class="go-back"> ← Go back to the Jobs section </a></p>
+<h2 id='job-details'>Job Details</h2>
+<p>During and after you run a Job, you can check its status and details in the Job Details page.  The <strong>Job Details page</strong> contains the following information:</p>
+
+<ul>
+<li><strong>Tracking Number:</strong> The identification number of the Job.</li>
+<li><strong>Execution Notes:</strong>The purpose of the Job.</li>
+<li><strong>Total Tasks:</strong> The number of Test Cases in the Job.</li>
+<li><strong>Progress:</strong> The Test Case number that the Job is running.</li>
+<li><strong>Termination Code:</strong> The health status code of the Job after finishing.</li>
+<li><strong>Duration:</strong> The time taken during the Job run.</li>
+<li><strong>Logs:</strong> The Job run processes description. </li>
+</ul>
+
+<p><a href="#jobs" class="go-back"> ← Go back to the Jobs section </a></p>
+<h1 id='glossary'>Glossary</h1>
+<p>The following table lists the commonly used words while working with Jeeves.</p>
+
+<aside class="notice"> This is an evolving section of the document. Words can be added or deleted as Jeeves evolve. 
+</aside>
+
+<table><thead>
+<tr>
+<th>Word</th>
+<th>Definition</th>
+<th>See section(s)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Alert Trigger</strong></td>
+<td>The type of action that launches a Slack Alert in a Project channel.</td>
+<td><a href="#2-integrate-slack-notifications-to-a-project">Integrate Slack Notifications to a Project Profile</a></td>
+</tr>
+<tr>
+<td><strong>API</strong></td>
+<td>The acronym for Application Programming Interface.</td>
+<td><a href="#api-reference-documentation">API Reference Documentation</a></td>
+</tr>
+<tr>
+<td><strong>AWS</strong></td>
+<td>The acronym for Amazon Web Services.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Bash Script</strong></td>
+<td>A text file with an order of commands to run in a Terminal.</td>
+<td><a href="#jobs">Jobs</a></td>
+</tr>
+<tr>
+<td><strong>Body</strong></td>
+<td>The content of a POST API call.</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Config</strong></td>
+<td>The Config section of the Run Parameters. Contains the testing variables for the Spot Instances.</td>
+<td><a href="#run-parameters">Run Parameters</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>DJ</strong></td>
+<td>The acronym for Dow Jones.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ Business Unit</strong></td>
+<td>The Dow Jones Business Unit. An internal section of Dow Jones, such as The Wall Street Journal or Barron’s.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ Component</strong></td>
+<td>The Dow Jones Component. An internal section of a DJ Business Unit, such as Shared Services or Data.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ Team</strong></td>
+<td>The Dow Jones Team. An internal section of a DJ Component. DJ Teams focus on specific projects.</td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ VPN</strong></td>
+<td>The Dow Jones Virtual Protected Network. Necessary to work with Jeeves and Dow Jones services and tools.</td>
+<td><a href="#overview">Overview</a></td>
+</tr>
+<tr>
+<td><strong>EC2 Instance</strong></td>
+<td>The acronym of Amazon Elastic Computing. Serves the computing services to run Test Cases in nonprod and stag environments.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Engine</strong></td>
+<td>The hardware and software behind an environment. Jeeves can use Local or AWS engines.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Environment</strong></td>
+<td>The state in which Jeeves runs. Jeeves can run in localhost, nonprod, and stag.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Expected Status</strong></td>
+<td>The HTTP status a request can receive.</td>
+<td><a href="#expected-status">Expected Status</a></td>
+</tr>
+<tr>
+<td><strong>Fleet</strong></td>
+<td>A group of Spot Instances that work together.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Follow Redirect</strong></td>
+<td>A web page configuration that allows web pages to redirect to a specified link.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Header</strong></td>
+<td>A variable that enables web clients and servers to pass information through a HTTP response or request.</td>
+<td><a href="#headers">Headers</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#header-parameters">Header Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Health Check</strong></td>
+<td>A tool to supervise the changes in requests results against expected results or previous results.</td>
+<td><a href="#health-checks">Health Check</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td><strong>Home Page</strong></td>
+<td>The principal page of a section.</td>
+<td><a href="#home-page">Home Page</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#project-home-page">Project Home Page</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-home-page">Test Case Home Page</a></td>
+</tr>
+<tr>
+<td><strong>Host</strong></td>
+<td>A server connected to the internet that offers services such as web pages.</td>
+<td><a href="#dynamic-hosts">Dynamic Hosts</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Job</strong></td>
+<td>A task that groups Test Cases to run them sequentially.</td>
+<td><a href="#jobs">Jobs</a></td>
+</tr>
+<tr>
+<td><strong>JSON</strong></td>
+<td>The acronym for JavaScript Object Notation. A data-interchange file format.</td>
+<td><a href="#run-parameters">Run Parameters</a></td>
+</tr>
+<tr>
+<td><strong>KO</strong></td>
+<td>The indicator for failed requests.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Latest Report</strong></td>
+<td>The report of the last Test Case run.</td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Log</strong></td>
+<td>A Terminal-like interface that lists the activities Jeeves does in real-time while running a Test Case or a Job.</td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#jobs">Jobs</a></td>
+</tr>
+<tr>
+<td><strong>MDN Web Docs</strong></td>
+<td>The acronym for Mozilla Developer Network Documentation Repository. A web page that contains information related to</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Mean</strong></td>
+<td>The average of a sequence of results. It can be obtained by adding up results and dividing them by the total of results.</td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Monitor</strong></td>
+<td>The Jeeves section which enables users to check the progress of Test Cases running in the background.</td>
+<td><a href="#monitor">Monitor</a></td>
+</tr>
+<tr>
+<td><strong>MS</strong></td>
+<td>The acronym for microseconds, a time measure.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Notification Trigger</strong></td>
+<td>The type of action that launches a Slack Notification in a Project channel.</td>
+<td><a href="#2-integrate-slack-notifications-to-a-project-profile">Integrate Slack Notifications to a Project Profile</a></td>
+</tr>
+<tr>
+<td><strong>OK</strong></td>
+<td>The indicator for successful requests.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Path</strong></td>
+<td>The location of a resource in a web page folder structure.</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#path-and-query-parameters">Path and Query Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Peer</strong></td>
+<td>The Instance Spot in charge of running a Test Case.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td><strong>Percentile</strong></td>
+<td>The score at or below which a given percentage falls.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Pool Status</strong></td>
+<td>The status of tasks that have run from a group of tasks.</td>
+<td><a href="#monitor">Monitor</a></td>
+</tr>
+<tr>
+<td><strong>Preset</strong></td>
+<td>The prefabricated configuration of a Test Case.</td>
+<td><a href="#create-a-test-case">Create a Test Case</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-presets">Test Case Presets</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Project</strong></td>
+<td>The group of pages, team, or  to which the</td>
+<td><a href="#projects">Projects</a></td>
+</tr>
+<tr>
+<td><strong>Query</strong></td>
+<td>A parameter used to sort or search a specific item by subject or characteristic.</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#path-and-query-parameters">Path and Query Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Queue Status</strong></td>
+<td>The status of tasks that are waiting to run from a group of tasks.</td>
+<td><a href="#monitor">Monitor</a></td>
+</tr>
+<tr>
+<td><strong>Rampup</strong></td>
+<td>The time a request takes to run.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Report</strong></td>
+<td>The presentation for the results obtained after a Test Case run.</td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Repository</strong></td>
+<td>The location of a web page code in GitHub.</td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#change-a-project-detail">Change a Project Detail</a></td>
+</tr>
+<tr>
+<td><strong>Response Time Higher Bound</strong></td>
+<td>The highest time at which a request is allowed to receive a response.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Response Time Lower Bound</strong></td>
+<td>The lowest time at which a request is allowed to receive a response.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>RPS</strong></td>
+<td>The acronym for Request Per Second.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Run Agent</strong></td>
+<td>The Amazon Spot Instance that runs the Test Case.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Spot</strong></td>
+<td>The Amazon Spot Instance that runs the Test Case.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Standard Deviation</strong></td>
+<td>The amount of variation or dispersion of a set of values.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Strategy</strong></td>
+<td>The way a Test Case selects the data during a run.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>T</strong></td>
+<td>The time.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Target Url</strong></td>
+<td>The main URL for a Test Case.</td>
+<td><a href="#url">URL</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#dynamic-target-url">Dynamic Target URL</a></td>
+</tr>
+<tr>
+<td><strong>Test Case</strong></td>
+<td>A simulation task that checks the availability and throughput of a web page or web application.</td>
+<td><a href="#test-cases">Test Cases</a></td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td>The acronym for Uniform Resource Locator.</td>
+<td><a href="#url">URL</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#dynamic-target-url">Dynamic Target URL</a></td>
+</tr>
+<tr>
+<td><strong>Version</strong></td>
+<td>The current state of Jeeves, labeled by a sequential number.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>VPC</strong></td>
+<td>The acronym for Virtual Private Cloud.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Warm Up URL</strong></td>
+<td>The URL a Test Case uses to test connectivity to the Project Host, before starting a run.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Web Availability</strong></td>
+<td>The ability to use or access a web page service.</td>
+<td><a href="#overview">Overview</a></td>
+</tr>
+<tr>
+<td><strong>Web Throughput</strong></td>
+<td>The amount of transactions over time when using or accessing a web page service.</td>
+<td><a href="#overview">Overview</a></td>
+</tr>
+<tr>
+<td><strong>Webhook</strong></td>
+<td>A HTTP callback defined by the user, triggered by an event. Webhooks serve to launch a consequential activity derived from its trigger.</td>
+<td><a href="#1-create-a-slack-channel-webhook">Create a Slack Channel WebHook</a></td>
+</tr>
+</tbody></table>
+<h1 id='contribute-to-jeeves'>Contribute to Jeeves</h1>
+<p>Thanks for your interest in contributing to Jeeves!</p>
+
+<p>For information on:</p>
+
+<ul>
+<li>Setting up a local worskpace.</li>
+<li>Deploying to the AWS Environments.</li>
+</ul>
+
+<p>Check the technical documentation available in the Jeeves API and WebApp repositories:</p>
+
+<ul>
+<li><a href="https://github.dowjones.net/SharedServices/Jeeves.API">Jeeves API Repository</a></li>
+<li><a href="https://github.dowjones.net/SharedServices/Jeeves.WebApp">Jeeves WebApp Repository</a></li>
+</ul>
+
+<p>For further information about Jeeves, questions, or report of bugs and errors, contact us at <a href="mailto:jeeves@dowjones.com">jeeves@dowjones.com</a> .</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="json">json</a>
+                <a href="#" data-language-name="shell">shell</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

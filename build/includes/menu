@@ -1,0 +1,177 @@
+<h1 id='menu'>Menu</h1>
+<p>The <strong>Jeeves Menu</strong>, located on the top of the page, displays the different sections of the Jeeves WebApp. The menu shows the following options:</p>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#monitor">Monitor</a></li>
+<li><a href="#user-guide">User Guide</a></li>
+<li><a href="#version">Version</a></li>
+</ul>
+
+<p>The following sections describe in detail each element of the Jeeves Menu.</p>
+
+<p><a href="#home-page" class="go-back"> ← Go back to the Home Page section </a></p>
+<h2 id='home'>Home</h2>
+<p>The <strong>Home</strong> option of the Jeeves Menu takes you to the Jeeves WebApp Home page. 
+You can also click the Jeeves button to do the same function. </p>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<h2 id='monitor'>Monitor</h2>
+<p>The <strong>Monitor</strong> option of the Jeeves Menu takes you to the Monitor page. The Monitor page shows information about the active and pending simulations happening  in the background of the Jeeves WebApp. The following image shows the Monitor page:</p>
+
+<p></br>
+<img src="images/jeeves-monitor-page.png" alt="Jeeves Monitor page screenshot">
+</br>
+</br></p>
+
+<p>The <strong>Monitor</strong> page contains the following two tables:</p>
+
+<ul>
+<li><p><strong>Active Simulations:</strong> Located on the left, it shows the information about the active test cases running on the Jeeves WebApp. It includes the following information:</p>
+
+<ul>
+<li><strong>Pool Status:</strong> The percentage of progress of activities completed up to time.</li>
+<li><strong>Project:</strong> The name of the running test case project.</li>
+<li><strong>Test Case:</strong> The name of the test case running.</li>
+<li><strong>Time Running:</strong> The time passed during the executionThe time elapsed during the test case run process.</li>
+</ul>
+
+<aside class="notice">Additionally, on the right side of the Active Simulations heading, you can find the number of test cases running displayed inside the parenthesis.
+</aside>
+
+<p></br></p></li>
+<li><p><strong>Pending Simulations:</strong>Located on the right, it presents the information about the pending simulations to run on the Jeeves WebApp. It includes the following information:</p>
+
+<ul>
+<li><strong>Queue Status:</strong> The progress percentage of activities queued that have been achieved up to timeThe percentage of progress of queued activities that have been completed up to time.</li>
+<li><strong>Project:</strong> The name of the  test case project to run.</li>
+<li><strong>Test Case:</strong> The name of the test case to run.</li>
+<li><strong>Time Running:</strong> The expected time to run the test case.</li>
+</ul>
+
+<aside class="notice">Additionally, on the right side of the <strong>Pending Simulations</strong> title, you can find the number of test cases pending to run displayed inside the parenthesis.
+</aside>
+
+<p></br></p>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p></li>
+</ul>
+<h2 id='user-guide'>User Guide</h2>
+<p>The <strong>User Guide</strong> option of the Jeeves Menu takes you to the Jeeves WebApp User Guide. The User Guide shows you information about how to work with the Jeeves WebApp. Additionally, it shows you how to configure the virtual workspace for the Jeeves WebApp and Jeeves API, as well as the API Reference documentation. </p>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<h2 id='version'>Version</h2>
+<p>Located in the top-right corner of the page, the <strong>Version</strong> option of the Jeeves Menu takes you to the Instance Details page. The Instance Details page is divided into two sections that show information about the instance:
+</br></p>
+
+<ul>
+<li><strong>Run Engine:</strong> Shows the type of engine in which the instance is running. The engine changes depending on whether it is a local instance or one in the cloud:</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Instance</th>
+<th>Engine</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Cloud</td>
+<td>Amazon Web Services (AWS) Spot Instance</td>
+</tr>
+<tr>
+<td>Local</td>
+<td>Localhost Image</td>
+</tr>
+</tbody></table>
+
+<p></br></p>
+
+<ul>
+<li><strong>Fleet Resources:</strong> Shows the information about the Fleet Request for AWS. Each fleet request contains an N number of Spot instances where Jeeves runs the test cases.  The information presented of each Fleet Request is the following:</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Section</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VPC (Virtual Private Cloud)</td>
+<td>Name</td>
+<td>The name of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>bu</td>
+<td>The Dow Jones (DJ) Business Unit of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>environment</td>
+<td>The type of environment in which the VPC is</td>
+</tr>
+<tr>
+<td></td>
+<td>owner</td>
+<td>The email of the VPC owner</td>
+</tr>
+<tr>
+<td></td>
+<td>product</td>
+<td>The type of product of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>component</td>
+<td>The DJ Component to which the VPC belongs</td>
+</tr>
+<tr>
+<td></td>
+<td>servicename</td>
+<td>The name of the service provided</td>
+</tr>
+<tr>
+<td>AZ (Amazon Zone)</td>
+<td>location</td>
+<td>The geographical location of the AWS VPC</td>
+</tr>
+<tr>
+<td>SUBNET</td>
+<td>Name</td>
+<td>The name of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>bu</td>
+<td>The DJ Business Unit of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>environment</td>
+<td>The type of environment in which the VPC is deployed</td>
+</tr>
+<tr>
+<td></td>
+<td>owner</td>
+<td>The email of the VPC owner</td>
+</tr>
+<tr>
+<td></td>
+<td>product</td>
+<td>The type of product of the VPC</td>
+</tr>
+<tr>
+<td></td>
+<td>component</td>
+<td>The DJ Component to which the VPC belongs</td>
+</tr>
+<tr>
+<td></td>
+<td>servicename</td>
+<td>The name of the service provided</td>
+</tr>
+</tbody></table>
+
+<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>

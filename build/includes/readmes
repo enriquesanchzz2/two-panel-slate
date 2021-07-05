@@ -1,0 +1,18 @@
+<h1 id='contribute-to-jeeves'>Contribute to Jeeves</h1>
+<p>Thanks for your interest in contributing to Jeeves!</p>
+
+<p>For information on:</p>
+
+<ul>
+<li>Setting up a local worskpace.</li>
+<li>Deploying to the AWS Environments.</li>
+</ul>
+
+<p>Check the technical documentation available in the Jeeves API and WebApp repositories:</p>
+
+<ul>
+<li><a href="https://github.dowjones.net/SharedServices/Jeeves.API">Jeeves API Repository</a></li>
+<li><a href="https://github.dowjones.net/SharedServices/Jeeves.WebApp">Jeeves WebApp Repository</a></li>
+</ul>
+
+<p>For further information about Jeeves, questions, or report of bugs and errors, contact us at <a href="mailto:jeeves@dowjones.com">jeeves@dowjones.com</a> .</p>

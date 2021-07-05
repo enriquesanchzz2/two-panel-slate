@@ -1,0 +1,509 @@
+<h1 id='glossary'>Glossary</h1>
+<p>The following table lists the commonly used words while working with Jeeves.</p>
+
+<aside class="notice"> This is an evolving section of the document. Words can be added or deleted as Jeeves evolve. 
+</aside>
+
+<table><thead>
+<tr>
+<th>Word</th>
+<th>Definition</th>
+<th>See section(s)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Alert Trigger</strong></td>
+<td>The type of action that launches a Slack Alert in a Project channel.</td>
+<td><a href="#2-integrate-slack-notifications-to-a-project">Integrate Slack Notifications to a Project Profile</a></td>
+</tr>
+<tr>
+<td><strong>API</strong></td>
+<td>The acronym for Application Programming Interface.</td>
+<td><a href="#api-reference-documentation">API Reference Documentation</a></td>
+</tr>
+<tr>
+<td><strong>AWS</strong></td>
+<td>The acronym for Amazon Web Services.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Bash Script</strong></td>
+<td>A text file with an order of commands to run in a Terminal.</td>
+<td><a href="#jobs">Jobs</a></td>
+</tr>
+<tr>
+<td><strong>Body</strong></td>
+<td>The content of a POST API call.</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Config</strong></td>
+<td>The Config section of the Run Parameters. Contains the testing variables for the Spot Instances.</td>
+<td><a href="#run-parameters">Run Parameters</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>DJ</strong></td>
+<td>The acronym for Dow Jones.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ Business Unit</strong></td>
+<td>The Dow Jones Business Unit. An internal section of Dow Jones, such as The Wall Street Journal or Barron’s.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ Component</strong></td>
+<td>The Dow Jones Component. An internal section of a DJ Business Unit, such as Shared Services or Data.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ Team</strong></td>
+<td>The Dow Jones Team. An internal section of a DJ Component. DJ Teams focus on specific projects.</td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td><strong>DJ VPN</strong></td>
+<td>The Dow Jones Virtual Protected Network. Necessary to work with Jeeves and Dow Jones services and tools.</td>
+<td><a href="#overview">Overview</a></td>
+</tr>
+<tr>
+<td><strong>EC2 Instance</strong></td>
+<td>The acronym of Amazon Elastic Computing. Serves the computing services to run Test Cases in nonprod and stag environments.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Engine</strong></td>
+<td>The hardware and software behind an environment. Jeeves can use Local or AWS engines.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Environment</strong></td>
+<td>The state in which Jeeves runs. Jeeves can run in localhost, nonprod, and stag.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Expected Status</strong></td>
+<td>The HTTP status a request can receive.</td>
+<td><a href="#expected-status">Expected Status</a></td>
+</tr>
+<tr>
+<td><strong>Fleet</strong></td>
+<td>A group of Spot Instances that work together.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Follow Redirect</strong></td>
+<td>A web page configuration that allows web pages to redirect to a specified link.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Header</strong></td>
+<td>A variable that enables web clients and servers to pass information through a HTTP response or request.</td>
+<td><a href="#headers">Headers</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#header-parameters">Header Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Health Check</strong></td>
+<td>A tool to supervise the changes in requests results against expected results or previous results.</td>
+<td><a href="#health-checks">Health Check</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td><strong>Home Page</strong></td>
+<td>The principal page of a section.</td>
+<td><a href="#home-page">Home Page</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#project-home-page">Project Home Page</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-home-page">Test Case Home Page</a></td>
+</tr>
+<tr>
+<td><strong>Host</strong></td>
+<td>A server connected to the internet that offers services such as web pages.</td>
+<td><a href="#dynamic-hosts">Dynamic Hosts</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Job</strong></td>
+<td>A task that groups Test Cases to run them sequentially.</td>
+<td><a href="#jobs">Jobs</a></td>
+</tr>
+<tr>
+<td><strong>JSON</strong></td>
+<td>The acronym for JavaScript Object Notation. A data-interchange file format.</td>
+<td><a href="#run-parameters">Run Parameters</a></td>
+</tr>
+<tr>
+<td><strong>KO</strong></td>
+<td>The indicator for failed requests.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Latest Report</strong></td>
+<td>The report of the last Test Case run.</td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Log</strong></td>
+<td>A Terminal-like interface that lists the activities Jeeves does in real-time while running a Test Case or a Job.</td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#jobs">Jobs</a></td>
+</tr>
+<tr>
+<td><strong>MDN Web Docs</strong></td>
+<td>The acronym for Mozilla Developer Network Documentation Repository. A web page that contains information related to</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Mean</strong></td>
+<td>The average of a sequence of results. It can be obtained by adding up results and dividing them by the total of results.</td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Monitor</strong></td>
+<td>The Jeeves section which enables users to check the progress of Test Cases running in the background.</td>
+<td><a href="#monitor">Monitor</a></td>
+</tr>
+<tr>
+<td><strong>MS</strong></td>
+<td>The acronym for microseconds, a time measure.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Notification Trigger</strong></td>
+<td>The type of action that launches a Slack Notification in a Project channel.</td>
+<td><a href="#2-integrate-slack-notifications-to-a-project-profile">Integrate Slack Notifications to a Project Profile</a></td>
+</tr>
+<tr>
+<td><strong>OK</strong></td>
+<td>The indicator for successful requests.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Path</strong></td>
+<td>The location of a resource in a web page folder structure.</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#path-and-query-parameters">Path and Query Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Peer</strong></td>
+<td>The Instance Spot in charge of running a Test Case.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td><strong>Percentile</strong></td>
+<td>The score at or below which a given percentage falls.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Pool Status</strong></td>
+<td>The status of tasks that have run from a group of tasks.</td>
+<td><a href="#monitor">Monitor</a></td>
+</tr>
+<tr>
+<td><strong>Preset</strong></td>
+<td>The prefabricated configuration of a Test Case.</td>
+<td><a href="#create-a-test-case">Create a Test Case</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-presets">Test Case Presets</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Project</strong></td>
+<td>The group of pages, team, or  to which the</td>
+<td><a href="#projects">Projects</a></td>
+</tr>
+<tr>
+<td><strong>Query</strong></td>
+<td>A parameter used to sort or search a specific item by subject or characteristic.</td>
+<td><a href="#dynamic-run-parameters">Dynamic Run Parameters</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#path-and-query-parameters">Path and Query Parameters</a></td>
+</tr>
+<tr>
+<td><strong>Queue Status</strong></td>
+<td>The status of tasks that are waiting to run from a group of tasks.</td>
+<td><a href="#monitor">Monitor</a></td>
+</tr>
+<tr>
+<td><strong>Rampup</strong></td>
+<td>The time a request takes to run.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Report</strong></td>
+<td>The presentation for the results obtained after a Test Case run.</td>
+<td><a href="#test-case-logs">Test Case Logs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Repository</strong></td>
+<td>The location of a web page code in GitHub.</td>
+<td><a href="#create-a-project">Create a Project</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#change-a-project-detail">Change a Project Detail</a></td>
+</tr>
+<tr>
+<td><strong>Response Time Higher Bound</strong></td>
+<td>The highest time at which a request is allowed to receive a response.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Response Time Lower Bound</strong></td>
+<td>The lowest time at which a request is allowed to receive a response.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>RPS</strong></td>
+<td>The acronym for Request Per Second.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>Run Agent</strong></td>
+<td>The Amazon Spot Instance that runs the Test Case.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Spot</strong></td>
+<td>The Amazon Spot Instance that runs the Test Case.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Standard Deviation</strong></td>
+<td>The amount of variation or dispersion of a set of values.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Strategy</strong></td>
+<td>The way a Test Case selects the data during a run.</td>
+<td><a href="#config">Config</a></td>
+</tr>
+<tr>
+<td><strong>T</strong></td>
+<td>The time.</td>
+<td><a href="#charts-and-indicators">Charts and Indicators</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-insights">Test Case Insights</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#test-case-reports">Test Case Reports</a></td>
+</tr>
+<tr>
+<td><strong>Target Url</strong></td>
+<td>The main URL for a Test Case.</td>
+<td><a href="#url">URL</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#dynamic-target-url">Dynamic Target URL</a></td>
+</tr>
+<tr>
+<td><strong>Test Case</strong></td>
+<td>A simulation task that checks the availability and throughput of a web page or web application.</td>
+<td><a href="#test-cases">Test Cases</a></td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td>The acronym for Uniform Resource Locator.</td>
+<td><a href="#url">URL</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#dynamic-target-url">Dynamic Target URL</a></td>
+</tr>
+<tr>
+<td><strong>Version</strong></td>
+<td>The current state of Jeeves, labeled by a sequential number.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>VPC</strong></td>
+<td>The acronym for Virtual Private Cloud.</td>
+<td><a href="#version">Version</a></td>
+</tr>
+<tr>
+<td><strong>Warm Up URL</strong></td>
+<td>The URL a Test Case uses to test connectivity to the Project Host, before starting a run.</td>
+<td><a href="#run-agent">Run Agent</a></td>
+</tr>
+<tr>
+<td><strong>Web Availability</strong></td>
+<td>The ability to use or access a web page service.</td>
+<td><a href="#overview">Overview</a></td>
+</tr>
+<tr>
+<td><strong>Web Throughput</strong></td>
+<td>The amount of transactions over time when using or accessing a web page service.</td>
+<td><a href="#overview">Overview</a></td>
+</tr>
+<tr>
+<td><strong>Webhook</strong></td>
+<td>A HTTP callback defined by the user, triggered by an event. Webhooks serve to launch a consequential activity derived from its trigger.</td>
+<td><a href="#1-create-a-slack-channel-webhook">Create a Slack Channel WebHook</a></td>
+</tr>
+</tbody></table>

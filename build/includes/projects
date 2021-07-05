@@ -1,0 +1,211 @@
+<h1 id='projects'>Projects</h1>
+<p>In Jeeves, <strong>Projects</strong> function as profiles for test cases. You can create Projects to group test cases aimed at a specific web page or web app and organize your test cases by Project profile.</p>
+
+<p>Your Projects are displayed on the Jeeves Home page, organized in a table by date of creation.  To access a Project, click its name, and the Jeeves WebApp will direct you to the Home page of the Project you selected.</p>
+
+<aside class="warning">All Jeeves users have access to all Projects created in Jeeves. Only work on the Projects you created to avoid inconsistencies or problems inside other Projects. 
+</aside>
+
+<p>This section contains the following topics:</p>
+
+<ul>
+<li><a href="#create-a-project">Create a Project</a></li>
+<li><a href="#project-home-page">Project Home Page</a></li>
+<li><a href="#project-settings">Project Settings</a>
+
+<ul>
+<li><a href="#change-a-project-detail">Change a Project Detail</a></li>
+<li><a href="#delete-a-project">Delete a Project</a></li>
+<li><a href="#restart-a-project">Restart a Project</a></li>
+<li><a href="#add-integrations-to-a-project">Add Integrations to a Project</a></li>
+</ul></li>
+</ul>
+
+<p><a href="#home-page" class="go-back"> ← Go back to the Home Page section </a></p>
+<h2 id='create-a-project'>Create a Project</h2>
+<p>To <strong>create a new Project</strong> profile, follow these steps:</p>
+
+<ol>
+<li>Open the <strong>Jeeves WebApp Home page</strong>.</li>
+<li>Click the <strong>+ Create</strong>  button on the upper right corner of the page.
+</br>The <strong>New Project</strong> page appears.</li>
+<li>Enter the name of the new Project in the <strong>Name</strong> field.</li>
+<li>Enter the name of the Project team in the <strong>Team</strong> field.</li>
+<li>Enter the name of the Project business unit in the <strong>Business Unit</strong> field.</li>
+<li>Enter the url to the Project repository in the <strong>Repository</strong> field.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>Your new Project appears in the Home page.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have created a Project profile successfully.
+</aside> 
+
+<p>To start working with your project, see the <a href="#project-home-page">Project Home page</a> section.</p>
+
+<p><a href="#projects" class="go-back"> ← Go back to the Projects section </a></p>
+<h2 id='project-home-page'>Project Home Page</h2>
+<p>Project profiles have a <strong>Home page</strong> that showcases the test cases and jobs created for that specific Project. After creating a new Project, the Project Home page is shown as an empty canvas waiting for test cases or jobs to be created.  See the section <a href="#test-cases">Test Cases</a> and <a href="#jobs">Jobs</a> to learn how to create a Test Case or a Job.</p>
+
+<p>To learn how to configure your Project, see the <a href="#project-settings">Project Settings</a> section.</p>
+
+<p><a href="#projects" class="go-back"> ← Go back to the Projects section </a></p>
+<h2 id='project-settings'>Project Settings</h2>
+<p>The Project Home page also shows the <strong>Project Settings</strong> option, located on the top right corner of the page. You can identify it by the gear icon. </p>
+
+<p><img src="images/jeeves-project-settings.png" alt="Jeeves Project Settings button screenshot"></p>
+
+<p>The <strong>Project Settings</strong>  page shows you the available settings to configure the Project profile that you are in. It displays the settings ordered in three tabs:</p>
+
+<ul>
+<li><p><strong>About this Project:</strong>  Shows the details about the project. The available details for a Project profile are:</p>
+
+<ul>
+<li><strong>Name:</strong> The name of the Project profile.</li>
+<li><strong>Team:</strong> The name of the team creating the Project profile.</li>
+<li><strong>Business Unit:</strong> The name of the Team Business Unit.</li>
+<li><strong>Repository:</strong> The URL to the Project code repository in GitHub.</li>
+</ul></li>
+<li><p><strong>Integrations:</strong> Adds integrations with other applications (for example, Slack).</p></li>
+<li><p><strong>Other Settings:</strong> Shows other configuration settings for the Project.</p></li>
+</ul>
+
+<p>In the following sections, you can learn more about the different settings available for the Jeeves Projects profiles. </p>
+
+<ul>
+<li><a href="#change-a-project-detail">Change a Project Detail</a></li>
+<li><a href="#delete-a-project">Delete a Project</a></li>
+<li><a href="#restart-a-project">Restart a Project</a></li>
+<li><a href="#add-integrations-to-a-project">Add Integrations to a Project</a></li>
+</ul>
+
+<p><a href="#projects" class="go-back"> ← Go back to the Projects section </a></p>
+<h3 id='change-a-project-detail'>Change a Project Detail</h3>
+<p>To <strong>change the Project profile details</strong>, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home</strong> page appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the <strong>About this Project</strong> tab.
+</br>The <strong>Project Details</strong> page appears.</li>
+<li>Enter the new name for the Project in the <strong>Name</strong> field.</li>
+<li>Enter the new name of the Project Team in the <strong>Team</strong> field.</li>
+<li>Enter the new name of the Business Unit of the Project Team in the <strong>Business Unit</strong> field.</li>
+<li>Enter the new URL to the Project code repository in the <strong>Repository</strong> field.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Project Details page saves and displays the new details</li>
+</ol>
+
+<aside class="success"> After following the preceding steps, you have changed the details of the Project successfully.
+</aside>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h3 id='delete-a-project'>Delete a Project</h3>
+<p>To <strong>delete a Project</strong> profile, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home page</strong> appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the <strong>Other Settings</strong> tab.
+</br>A checklist with options appears.</li>
+<li>Select the <strong>Delete this Project</strong> option.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Project is deleted and the Jeeves WebApp Home page appears..</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have deleted the Project successfully.
+</aside>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h3 id='restart-a-project'>Restart a Project</h3>
+<p>When you restart a Project, Jeeves deletes all the Test Cases loaded to the Project without changing the settings of the Project. </p>
+
+<p>To <strong>restart a Project</strong>, follow these steps:</p>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home page</strong> appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the <strong>Other Settings</strong> tab.
+</br>A checklist with options appears.</li>
+<li>Select the <strong>Start Over</strong> option.</li>
+<li>Click the <strong>Ok</strong> button.
+</br>The Project Home page appears without any test cases loaded.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have restarted the Project profile successfully.
+</aside>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h3 id='add-integrations-to-a-project'>Add Integrations to a Project</h3>
+<p>Currently, Jeeves integrates with Slack to deliver channel notifications and alerts about the status of a test case run of a specific Project.<br>
+To integrate Slack Notifications to a Project, you need to follow these two procedures, which are described in detail in the following sections: </p>
+
+<ol>
+<li><a href="#1-create-a-slack-channel-webhook">Create a Slack channel WebHook</a></li>
+<li><a href="#2-integrate-slack-notifications-to-a-project-profile">Integrate Slack notifications to a Project profile</a></li>
+</ol>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
+<h4 id='1-create-a-slack-channel-webhook'>1. Create a Slack Channel WebHook</h4>
+<p>To <strong>create a Slack Channel WebHook</strong> to integrate received notifications in your Slack channel, follow these steps:</p>
+
+<ol>
+<li>Access the <a href="https://dowjones.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks"><strong>Dow Jones Slack Channel Incoming WebHooks</strong></a> page in your browser.
+</br>The <strong>Incoming WebHooks</strong> page appears.</li>
+<li>In the <strong>Post to Channel</strong> section, select your channel from the dropdown menu.</li>
+<li>Click the <strong>Add Incoming WebHooks integration</strong> button.
+</br>A page with the WebHook integration information appears.</li>
+<li>Save the <strong>WebHook URL</strong> for the following steps.</li>
+</ol>
+
+<aside class="success">After following the preceding steps, you have created the WebHook URL to integrate Jeeves with your Slack channel.
+</aside>
+
+<p>To integrate Jeeves to your slack channel, see the <a href="#integrate-slack-notifications-to-a-project-profile">Integrate Slack Notifications to a Project Profile</a> section.</p>
+<h4 id='2-integrate-slack-notifications-to-a-project-profile'>2. Integrate Slack Notifications to a Project Profile</h4>
+<p>To <strong>integrate Slack notifications</strong> to a Project profile, follow these steps:</p>
+
+<aside class="notice">Before proceeding to perform these steps, you must follow the steps in the <a href="#2-integrate-slack-notifications-to-a-project">Create a Slack Channel WebHook</a> section.
+</aside>
+
+<ol>
+<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+</br>The selected <strong>Project Home</strong> page appears.</li>
+<li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
+</br>The <strong>Project Settings</strong> page appears.</li>
+<li>Select the tab <strong>Integrations</strong>.
+</br>A form to configure the integration appears.</li>
+<li>Type the name of your Projects Slack Channel in the <strong>Channel Name</strong> field.</li>
+<li>Type the WebHook URL in the <strong>WebHook Url</strong> field. See how to get the URL in the Create A Slack Channel WebHook steps.</li>
+<li>Select the type of notification in the <strong>Notification Trigger</strong> section. You can choose from the following options:
+
+<ul>
+<li><strong>OK:</strong> Notifies that a test case ran successfully. </li>
+<li><strong>Warning:</strong> Notifies that a test case ran with errors.</li>
+<li><strong>Bad:</strong> Notifies that a test case ran with unsuccessful  results.</li>
+<li><strong>None:</strong> Does not notify when a test case runs.</li>
+</ul></li>
+<li>Select the type of alert in the <strong>Alert Trigger</strong> section. You can choose from the following options:
+
+<ul>
+<li><strong>OK:</strong> Notifies that a test case ran successfully. </li>
+<li><strong>Warning:</strong> Notifies that a test case ran with errors.</li>
+<li><strong>Bad:</strong> Notifies that a test case ran with unsuccessful results.</li>
+<li><strong>None:</strong> Does not notify when a test case runs.</li>
+</ul></li>
+<li>Click the <strong>Ok</strong> button.
+</br>Jeeves is integrated to your Slack channel. </li>
+</ol>
+
+<aside class="success">After integrating Slack notifications to your Slack channel, you will receive the notifications every time the conditions that you configured happen.  
+</aside>
+
+<p>Once you created and configured your Project profile, it is time to create and configure the test cases for your Project website or web application. 
+The <a href="#test-cases">Test Cases</a> section walks you through the process of  creating, configuring, and running Test Cases.</p>
+
+<p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
