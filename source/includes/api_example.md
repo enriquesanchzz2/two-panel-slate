@@ -1,219 +1,98 @@
-# API Example
+# API Reference Documentation Example
+The following is an example of an API Resource and Endpoint reference documentation. 
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+# Projects
+The Projects resource enables you to interact with the Project profiles in Jeeves.
+The following table describes the available endpoints of the Projects resource:
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-## Authentication
+| Endpoint | Description |
+| -------- | ----------- |
+| <a href="#get-projects" class="get-endpoint-word">GET</a> /projects | Retrieves the data objects of the Project profiles available in Jeeves. |
+| <a href="#post-projects" class="post-endpoint-word">POST</a> /projects | Creates a new Project profile. |
+| <a href="#put-projects-project" class="put-endpoint-word">PUT</a> /projects/{project} | Updates the data object of a Project profile. |
+| <a href="#delete-projects-project" class="delete-endpoint-word">DELETE</a> /projects/{project} | Deletes a Project profile. |
 
-> To authorize, use this code:
 
-```ruby
-require 'kittn'
+## GET /PROJECTS
+<p class="get-endpoint">GET</p>
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
+### Summary
+The **GET /PROJECTS** endpoint retrieves the data objects of the Project profiles available in Jeeves. 
 
-```python
-import kittn
+### Parameters
+This endpoint allows the following parameters:
 
-api = kittn.authorize('meowmeowmeow')
-```
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| from | Query | The Project identification number | No | Integer |
+| size | Query | The number of Projects to retrieve. | No | Integer |
 
-```shell
-## With shell, you can just pass the correct header with each request
-curl "api_endpoint_here" \
-  -H "Authorization: meowmeowmeow"
-```
+### Responses
+This endpoint receives the following response code:
 
-```javascript
-const kittn = require('kittn');
+| Code | Description |
+| ---- | ----------- |
+| 200 | Success |
 
-let api = kittn.authorize('meowmeowmeow');
-```
+### Sample Request
+These are examples of an API request to this endpoint: 
 
-> Make sure to replace `meowmeowmeow` with your API key.
-
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-## Kittens
-
-### Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
+#### cURL Request
+`curl -X GET --header 'Accept: application/json' 'http://jeeves-api-nonprod.us-east-1.elasticbeanstalk.com/api/projects?from=0&size=2'`
 
 #### HTTP Request
+` http://jeeves-api-nonprod.us-east-1.elasticbeanstalk.com/api/projects?from=0&size=2 `
 
-`GET http://example.com/api/kittens`
 
-#### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-### Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
-
-> The above command returns JSON structured like this:
+### Sample Response Body
+The sample JSON file at the right of the page presents the Response Body obtained with the Sample Request.
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+  "total": 27,
+  "from": 0,
+  "pageSize": 2,
+  "results": [
+    {
+      "project": "Test-Project",
+      "projectTeam": "Test Team",
+      "projectBu": "Test BU",
+      "projectRepository": "Test Repo",
+      "lastActivity": 1623427403030,
+      "timestamp": 1582927868192
+    },
+    {
+      "project": "Allesseh.Ingest",
+      "projectTeam": "Allesseh",
+      "projectBu": "Allesseh",
+      "projectRepository": "git@github.dowjones.net:Content/Allesseh.Ingest.git",
+      "lastActivity": 1623349358757,
+      "timestamp": 1622645743073
+    }
+  ]
 }
 ```
 
-This endpoint retrieves a specific kitten.
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-#### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-#### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
-### Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -X DELETE \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
+### Sample Response Headers
+The sample JSON file at the right of the page presents the Response Headers obtained with the Sample Request.
 
 ```json
 {
-  "id": 2,
-  "deleted" : ":("
+  "access-control-allow-headers": "Content-Type, Last-Update",
+  "access-control-allow-methods": "POST, GET, OPTIONS, PUT, DELETE",
+  "access-control-allow-origin": "*",
+  "cache-control": "no-cache, private, no-store",
+  "connection": "keep-alive",
+  "content-encoding": "gzip",
+  "content-type": "application/json;charset=utf-8",
+  "date": "Fri, 18 Jun 2021 03:49:02 GMT",
+  "expires": "Fri, 18 Jun 2021 03:49:02 GMT",
+  "pragma": "no-cache",
+  "server": "nginx/1.18.0",
+  "transfer-encoding": "chunked"
 }
 ```
-
-This endpoint deletes a specific kitten.
-
-#### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-#### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
