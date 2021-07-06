@@ -1,88 +1,221 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/slatedocs/img/main/logo-slate.png" alt="Slate: API Documentation Generator" width="226">
-  <br>
-  <a href="https://github.com/slatedocs/slate/actions?query=workflow%3ABuild+branch%3Amain"><img src="https://github.com/slatedocs/slate/workflows/Build/badge.svg?branch=main" alt="Build Status"></a>
-</p>
+# Wizeline Two-panel Slate Template
 
-<p align="center">Slate helps you create beautiful, intelligent, responsive API documentation.</p>
+Welcome to the Wizeline Two-panel Slate Template. A template based on the [Official Dracula Slate Template](https://github.com/dracula/slate).
+Use this template to create a static site for documentation such as:
 
-<p align="center"><img src="https://raw.githubusercontent.com/sean-hill/slate-dracula/master/source/images/slate-dracula.png" width=700 alt="Screenshot of Example Documentation created with Slate"></p>
+* User Guides
+* Information Sites
+* API Reference Documentation
 
-<p align="center"><em>The example above was created with Slate with a Dracula Theme twist. Check it out at <a href="https://sean-hill.github.io/slate-dracula">sean-hill.github.io/slate-dracula</a>.</em></p>
 
-Features
-------------
+The following list shows the sections on this site:
 
-* **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [PayPal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
+* [Getting Started](#getting-started)
+* [Adding a New Page to the Static Site](#adding-a-new-page-to-the-static-site)
+* [API Reference Documentation Example](#api-reference-documentation-example)
 
-* **Everything on a single page** — Gone are the days when your users had to search through a million pages to find what they wanted. Slate puts the entire documentation on a single page. We haven't sacrificed linkability, though. As you scroll, your browser's hash will update to the nearest header, so linking to a particular point in the documentation is still natural and easy.
 
-* **Slate is just Markdown** — When you write docs with Slate, you're just writing Markdown, which makes it simple to edit and understand. Everything is written in Markdown — even the code samples are just Markdown code blocks.
+# Getting Started
+Slate is an open source tool to create static sites for documentation. To use Slate, you need to know Markdown Syntax to create the static sites documentation files. 
+To know more about Markdown Syntax in this template, see the [Basic Syntax](#basic-syntax) section.
 
-* **Write code samples in multiple languages** — If your API has bindings in multiple programming languages, you can easily put in tabs to switch between them. In your document, you'll distinguish different languages by specifying the language name at the top of each code block, just like with GitHub Flavored Markdown.
+To work with this Slate template, you need the following requirements:
 
-* **Out-of-the-box syntax highlighting** for [over 100 languages](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers), no configuration required.
+* Docker Desktop
 
-* **Automatic, smoothly scrolling table of contents** on the far left of the page. As you scroll, it displays your current position in the document. It's fast, too. We're using Slate at TripIt to build documentation for our new API, where our table of contents has over 180 entries. We've made sure that the performance remains excellent, even for larger documents.
 
-* **Let your users update your documentation for you** — By default, your Slate-generated documentation is hosted in a public GitHub repository. Not only does this mean you get free hosting for your docs with GitHub Pages, but it also makes it simple for other developers to make pull requests to your docs if they find typos or other problems. Of course, if you don't want to use GitHub, you're also welcome to host your docs elsewhere.
+## Configuring Slate in your computer
+You must first install the Slate Docker image on your computer before workin on your documentation. 
+To install the Slate Docker image on your computer follow these steps:
 
-* **RTL Support** Full right-to-left layout for RTL languages such as Arabic, Persian (Farsi), Hebrew etc.
+<aside class="notice"> You have to do this procedure once. 
+</aside>
 
-Getting started with Slate is super easy! Simply press the green "use this template" button above and follow the instructions below. Or, if you'd like to check out what Slate is capable of, take a look at the [sample docs](https://slatedocs.github.io/slate/).
+1. Install Docker Desktop on your computer.
+2. Open a terminal window on your computer.
+3. Locate your terminal in the folder of your static site.
+4. Run the following command to pull the most recent image of Slate. It might take some minutes depending on your internet bandwidth:
+</br>`docker pull slatedocs/slate`
 
-Getting Started with Slate
-------------------------------
+<aside class="success"> After following the preceding steps, you have successfully installed the Slate Docker image on your computer.
+</aside>
 
-To get started with Slate, please check out the [Getting Started](https://github.com/slatedocs/slate/wiki#getting-started)
-section in our [wiki](https://github.com/slatedocs/slate/wiki).
+You can create a local environment for your static sites to help you view them before deploying your changes to the live version. 
+To create a local environment for a static site, follow these steps:
 
-We support running Slate in three different ways:
-* [Natively](https://github.com/slatedocs/slate/wiki/Using-Slate-Natively)
-* [Using Vagrant](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Vagrant)
-* [Using Docker](https://github.com/slatedocs/slate/wiki/Using-Slate-in-Docker)
+1. Open a terminal window on your computer.
+2. Locate your terminal in the folder of your static site.
+3. Create the docker container for your local environment, use the following command:
+</br>`docker run --name your-site-slate-preview -p 4567:4567 --volume="$(pwd)/source:/srv/slate/source" slatedocs/slate serve`
+4. See your static site in the address http://localhost:4567/ .
 
-Companies Using Slate
----------------------------------
+<aside class="success"> After following the preceding steps, you have successfully created the Docker container for your static site.
+</aside>
 
-* [NASA](https://api.nasa.gov)
-* [Sony](http://developers.cimediacloud.com)
-* [Best Buy](https://bestbuyapis.github.io/api-documentation/)
-* [Travis-CI](https://docs.travis-ci.com/api/)
-* [Greenhouse](https://developers.greenhouse.io/harvest.html)
-* [WooCommerce](http://woocommerce.github.io/woocommerce-rest-api-docs/)
-* [Dwolla](https://docs.dwolla.com/)
-* [Clearbit](https://clearbit.com/docs)
-* [Coinbase](https://developers.coinbase.com/api)
-* [Parrot Drones](http://developer.parrot.com/docs/bebop/)
-* [Scale](https://docs.scaleapi.com/)
+## Understanding Slate Files
+Your project Slate folder contains various files for the functionality of the static site. Each file controls a different aspect of the static site, the following list shows the Slate files and their description:
 
-You can view more in [the list on the wiki](https://github.com/slatedocs/slate/wiki/Slate-in-the-Wild).
+* **Source folder:** Contains the files to edit. The files are divided into the following folders: 
+* **Fonts:** Contains the Web Open Font Format files (WOFF2) to the text font of the static site.
+* **Images:** Contains the images used in the static site, such as the favicon and sample images. 
+* **Includes:** Contains the markdown files with the information displayed in the static site. Files in this folder can be one of the following types: 
+* **.md files:**  Files that contain only text.
+* **.md.erb files:** Files that contain text and images. 
+* **Javascripts:** Contains the JavaScript files to give the static site its dynamic search and appearance. 
+* **Layouts:** Contains the .erb files that fix the layout appearance of the static site.
+* **Stylesheets:** Contains the CSS files to change the appearance of the static site.
+* **Index.html.md.erb:** Is the main file of the static site. Defines the structure of the documentation. 
 
-Questions? Need Help? Found a bug?
---------------------
 
-If you've got questions about setup, deploying, special feature implementation in your fork, or just want to chat with the developer, please feel free to [start a thread in our Discussions tab](https://github.com/slatedocs/slate/discussions)!
+## Basic Syntax
+Use Markdown to add information to the pages of your site.
 
-Found a bug with upstream Slate? Go ahead and [submit an issue](https://github.com/slatedocs/slate/issues). And, of course, feel free to submit pull requests with bug fixes or changes to the `dev` branch.
+### Lists
+Lists can be:
 
-Contributors
---------------------
+* Numbered: For instructions or procedures.
+* Unnumbered: For lists in general.
 
-Slate was built by [Robert Lord](https://lord.io) while at [TripIt](https://www.tripit.com/). The project is now maintained by [Matthew Peveler](https://github.com/MasterOdin) and [Mike Ralphson](https://github.com/MikeRalphson).
+This is how to add lists.
 
-Thanks to the following people who have submitted major pull requests:
+#### numbered
+this is how it looks in your code:
 
-- [@chrissrogers](https://github.com/chrissrogers)
-- [@bootstraponline](https://github.com/bootstraponline)
-- [@realityking](https://github.com/realityking)
-- [@cvkef](https://github.com/cvkef)
+```
+1.  Item 1
+2.  Item 2
+3.  Item 3
+```
 
-Also, thanks to [Sauce Labs](http://saucelabs.com) for sponsoring the development of the responsive styles.
+This is how it looks on your static site:
 
-Special Thanks
---------------------
-- [Middleman](https://github.com/middleman/middleman)
-- [middleman-syntax](https://github.com/middleman/middleman-syntax)
-- [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+1.  Item 1
+2.  Item 2
+3.  Item 3
+
+#### unnumbered
+this is how it looks in your code:
+
+```
+* Another item
+* Another item
+```
+
+This is how it looks on your static site:
+
+* Another item
+* Another item
+
+### Code Blocks
+Code blocks appear after the instructions where you added them. Specify the code language at the beginning of the block.
+
+This is a JavaScript code block:
+
+```javascript
+function copyToClipboard(container) {
+  const el = document.createElement('textarea');
+  el.value = container.textContent.replace(/\n$/, '');
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}
+
+function setupCodeCopy() {
+  $('pre.highlight').prepend('<div class="copy-clipboard"><svg xmlns="http://www.w3.org/2000/svg"></div>');
+  $('.copy-clipboard').on('click', function() {
+    copyToClipboard(this.parentNode.children[1]);
+  });
+}
+```
+
+This is a CSS code block:
+
+```css
+// BACKGROUND COLORS
+////////////////////
+$nav-bg: #2E3336 !default;
+$examples-bg: #2E3336 !default;
+$code-bg: #1E2224 !default;
+$code-annotation-bg: #191D1F !default;
+$nav-subitem-bg: #1E2224 !default;
+$nav-active-bg: #0F75D4 !default;
+$nav-active-parent-bg: #1E2224 !default; // parent links of the current section
+$lang-select-border: #000 !default;
+$lang-select-bg: #6d7375 !default;
+$lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
+$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
+$main-bg: #F3F7F9 !default;
+$aside-notice-bg: #8fbcd4 !default;
+$aside-warning-bg: #c97a7e !default;
+$aside-success-bg: #6ac174 !default;
+$search-notice-bg: #c97a7e !default;
+```
+
+### API Words
+You can add a design to the verbs of API endpoints with the class `verb-endpoint-word` , as in the following example:
+
+this is how it looks in your code:
+
+```html
+<a class="get-enpoint-word" href="link-to-your-endpoint"> GET </a> /PROJECTS/{PROJECT}
+<a class="post-enpoint-word" href="link-to-your-endpoint"> POST </a> /PROJECTS/{PROJECT}
+<a class="put-enpoint-word" href="link-to-your-endpoint"> PUT </a> /PROJECTS/{PROJECT}
+<a class="delete-enpoint-word" href="link-to-your-endpoint"> DELETE </a> /PROJECTS/{PROJECT}
+```
+
+This is how it looks on your static site:
+
+<a class="get-endpoint-word" href="link-to-your-endpoint">GET</a> /PROJECTS/{PROJECT}
+
+<a class="post-endpoint-word" href="link-to-your-endpoint">POST</a> /PROJECTS/{PROJECT}
+
+<a class="put-endpoint-word" href="link-to-your-endpoint">PUT</a> /PROJECTS/{PROJECT}
+
+<a class="delete-endpoint-word" href="link-to-your-endpoint"> DELETE </a> /PROJECTS/{PROJECT}
+
+### Notes
+This template has three notice notes, this is their syntax:
+
+```html
+<aside class="success"> This is a success note. </aside>
+<aside class="notice"> This is an information note. </aside>
+<aside class="warning"> This is a warning note. </aside>
+```
+And this is how they look in your static site:
+
+<aside class="success"> This is a success note. </aside>
+<aside class="notice"> This is an information note. </aside>
+<aside class="warning"> This is a warning note. </aside>
+
+
+For further information about Markdown Syntax, see the [Markdown Org. Basic Syntax Guide](https://www.markdownguide.org/basic-syntax/).
+
+# Adding a New Page to the Static Site
+To add a new information section, follow these steps:
+
+1. Open the **`includes`** folder of your static site folder.
+2. Create a new file for your information section:
+</br>a. Create a **`.md file`** for an only text section.
+</br>b. Create a **`.md.erb`** for a text and images section. 
+3. Open the file in your favorite File Editor Program.
+4. Edit the file with the information you need to upload, follow the Markdown Syntax.
+5. Save your changes.
+6. Open the **`index.html.md.erb`** file
+7. In the includes section of the file, add the name of your file as in the example below:
+
+    ```html
+    includes:
+      - overview.md.erb
+      - the-name-of-your-file.md
+    ```
+
+8. Save the changes to the file.
+
+
+<aside class="success"> After following the preceding steps, you have successfully added a section to your static site.
+</aside>
+
+
+
+
