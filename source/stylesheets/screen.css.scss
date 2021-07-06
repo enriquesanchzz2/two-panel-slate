@@ -764,6 +764,50 @@ a{
 
 //SETS THE  DESIGN FOR THE ENDPOINT VERBS
 
+.get-endpoint {
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  background: (rgb(40, 100, 150));
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width:fit-content;
+  border-radius: 0.25rem;
+}
+
+.post-endpoint {
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  background: (rgb(40, 150, 120));
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width:fit-content;
+  border-radius: 0.25rem;
+}
+
+.put-endpoint {
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  background: (rgb(150, 100, 40));
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width:fit-content;
+  border-radius: 0.25rem;
+}
+
+.delete-endpoint {
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  background: (rgb(150, 40, 40));
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width:fit-content;
+  border-radius: 0.25rem;
+}
+
 .get-endpoint-word {
   display:inline;
   font-weight: 800;
