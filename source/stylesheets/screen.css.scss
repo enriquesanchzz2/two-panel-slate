@@ -527,7 +527,8 @@ a{
   }
 
   img {
-    max-width: 100%;
+    max-width: 90%;
+    padding: 0 3em;
   }
 
   code {
@@ -559,7 +560,7 @@ a{
     line-height: 1.6;
     color: $aside-notice-text;
     font-size: 14px;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     width: 70%;
 
     &.warning {
@@ -624,6 +625,7 @@ a{
     padding: 1em 28px;
     margin: 0;
     width: $examples-width;
+    border-radius: 1rem;
 
     float:right;
     clear:right;
@@ -664,6 +666,7 @@ a{
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 0.5px;
+      width: 85%;
 
       code {
         text-transform: none;
@@ -759,50 +762,58 @@ a{
   opacity: 0.8;
 }
 
-.get-endpoint {
+//SETS THE  DESIGN FOR THE ENDPOINT VERBS
+
+.get-endpoint-word {
+  display:inline;
   font-weight: 800;
   text-align: center;
   color: #fff;
   background: (rgb(40, 100, 150));
-  padding-top: 1.5rem;
-  margin-bottom: 4rem;
   width:fit-content;
+  padding: 0 0.5em;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 
-.post-endpoint {
+.post-endpoint-word {
+  display:inline;
   font-weight: 800;
   text-align: center;
   color: #fff;
   background: (rgb(40, 150, 120));
-  padding: 1.5rem;
-  margin: 1.5rem;
   width:fit-content;
+  padding: 0 0.5em;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 
-.put-endpoint {
+.put-endpoint-word {
+  display:inline;
   font-weight: 800;
   text-align: center;
   color: #fff;
   background: (rgb(150, 100, 40));
-  padding: 1.5rem;
-  margin: 1.5rem;
   width:fit-content;
+  padding: 0 0.5em;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 
-.delete-endpoint {
+.delete-endpoint-word {
+  display:inline;
   font-weight: 800;
   text-align: center;
   color: #fff;
   background: (rgb(150, 40, 40));
-  padding: 1.5rem;
-  margin: 1.5rem;
   width:fit-content;
+  padding: 0 0.5em;
   border-radius: 0.25rem;
+  text-decoration: none;
 }
 
+
+// PUTS THE CODE EXAMPLES IN THE MAIN PANEL
 .highlight+pre {
   position: static;
   float: none;
@@ -812,6 +823,7 @@ a{
   left: 0;
 }
 
+// SETS THE DESIGN OF THE GO BACK BUTTON
 .go-back {
   display: block;
   font-weight: 800;
