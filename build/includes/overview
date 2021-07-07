@@ -1,20 +1,20 @@
 <h1 id='overview'>Overview</h1>
-<p>This documentation guides you through the sections and components of the Jeeves WebApp. It also contains guides for activities such as how to <a href="#create-a-project">create a project</a> or <a href="#create-a-test-case">create a test case</a>, so that you can start working with the Jeeves WebApp as smoothly as possible.</p>
+<p>This documentation guides you through the sections and components of the Watson WebApp. It also contains guides for activities such as how to <a href="#create-a-project">create a project</a> or <a href="#create-a-test-case">create a test case</a>, so that you can start working with the Watson WebApp as smoothly as possible.</p>
 
-<p>The Jeeves WebApp User Guide contains the following sections: </p>
+<p>The Watson WebApp User Guide contains the following sections: </p>
 
 <ul>
-<li><strong><a href="#home-page">Home Page</a>:</strong> Presents the information about the Jeeves Home page.</li>
+<li><strong><a href="#home-page">Home Page</a>:</strong> Presents the information about the Watson Home page.</li>
 <li><strong><a href="#menu">Menu</a>:</strong> Presents the information about the different Menu options </li>
-<li><strong><a href="#projects">Projects</a>:</strong>  Presents the information about Projects in Jeeves, from how to create a Project to how to add an integration.</li>
-<li><strong><a href="#test-cases">Test Cases</a>:</strong> Presents the information about Test Cases in Jeeves, from how to create a test case to how to interpret test case reports.</li>
-<li><strong><a href="#jobs">Jobs</a>:</strong> Presents the information about Jobs in Jeeves, from how to create a job to what are the  job details.</li>
+<li><strong><a href="#projects">Projects</a>:</strong>  Presents the information about Projects in Watson, from how to create a Project to how to add an integration.</li>
+<li><strong><a href="#test-cases">Test Cases</a>:</strong> Presents the information about Test Cases in Watson, from how to create a test case to how to interpret test case reports.</li>
+<li><strong><a href="#jobs">Jobs</a>:</strong> Presents the information about Jobs in Watson, from how to create a job to what are the  job details.</li>
 </ul>
 
-<aside class="notice">Note: To have access to the Jeeves WebApp, you need to be connected to the <a href="https://docs.google.com/document/d/1vZSGBWDmi5Cnw8Hx1e7DLc6lRKgb321l4tsGZI2P9QQ/edit">Dow Jones GlobalConnect VPN</a>.
+<aside class="notice">Note: To have access to the Watson WebApp, you need to be connected to the <a href="https://docs.google.com/document/d/1vZSGBWDmi5Cnw8Hx1e7DLc6lRKgb321l4tsGZI2P9QQ/edit">Good Corp. GlobalConnect VPN</a>.
 </aside>
 <h1 id='home-page'>Home Page</h1>
-<p>The <strong>Jeeves WebApp Home page</strong> is the main page of Jeeves. When you access the Jeeves WebApp through your browser.  The Jeeves WebApp Home page contains two elements as shown in the following image:  </p>
+<p>The <strong>Watson WebApp Home page</strong> is the main page of Watson. When you access the Watson WebApp through your browser.  The Watson WebApp Home page contains two elements as shown in the following image:  </p>
 
 <ul>
 <li><a href="#menu">Menu</a></li>
@@ -23,9 +23,9 @@
 
 <p></br>
 </br>
-<img src="images/jeeves-home-page.png" alt="Jeeves Home page screenshot"></p>
+<img src="images/watson-home-page.png" alt="Watson Home page screenshot"></p>
 
 <p></br>
 </br></p>
 
-<p>The following sections describe in detail each element of the Jeeves WebApp Home page.</p>
+<p>The following sections describe in detail each element of the Watson WebApp Home page.</p>

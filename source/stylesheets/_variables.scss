@@ -42,10 +42,10 @@ $accent-color:  #E93D44;
 $nav-bg: $bg-color !default;
 $examples-bg: $bg-color !default;
 $code-bg: $bg-color !default;
-$code-annotation-bg: #999999 !default;
+$code-annotation-bg: #555558 !default;
 $nav-subitem-bg: $red !default;
-$nav-active-bg: $red !default;
-$nav-active-parent-bg: $red !default; // parent links of the current section
+$nav-active-bg: $accent-color !default;
+$nav-active-parent-bg: $accent-color !default; // parent links of the current section
 $lang-select-border: #000 !default;
 $lang-select-bg: #1E2224 !default;
 $lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
