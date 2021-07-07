@@ -1,5 +1,5 @@
 <h1 id='jobs'>Jobs</h1>
-<p>Jeeves Projects can have Jobs. <strong>Jobs</strong> enable you to automate your testing tasks, setting an expected successful responses percentage, running all the Project Test Cases in a sequence without you having to initialize each Test Case. If the results obtained seem that they will not reach the expected percentage during the running of a Job, the Job run stops and delivers a <strong>BAD</strong> status, warning you that your Project availability is not as expected. </p>
+<p>Watson Projects can have Jobs. <strong>Jobs</strong> enable you to automate your testing tasks, setting an expected successful responses percentage, running all the Project Test Cases in a sequence without you having to initialize each Test Case. If the results obtained seem that they will not reach the expected percentage during the running of a Job, the Job run stops and delivers a <strong>BAD</strong> status, warning you that your Project availability is not as expected. </p>
 
 <p>Jobs contain the following information: </p>
 
@@ -27,7 +27,7 @@
 <p>To <strong>create and run a Job with a Bash Script</strong>, follow these steps:</p>
 
 <ol>
-<li>Select a <strong>Project</strong> profile from the <strong>Jeeves Home page</strong>.
+<li>Select a <strong>Project</strong> profile from the <strong>Watson Home page</strong>.
 </br>The selected <strong>Project Home page</strong> appears.</li>
 <li>On your <strong>Project Home page</strong>, select the Jobs tab.
 </br>The <strong>Jobs</strong> page appears.</li>
@@ -66,10 +66,10 @@ sh the-name-of-your-file.sh
 
 <p><a href="#jobs" class="go-back"> ← Go back to the Jobs section </a></p>
 <h3 id='manual-run'>Manual Run</h3>
-<p>To <strong>create and run a Job</strong> with Jeeves, follow these steps:</p>
+<p>To <strong>create and run a Job</strong> with Watson, follow these steps:</p>
 
 <ol>
-<li>Select a <strong>Project</strong> profile from the <strong>Jeeves Home page</strong>.
+<li>Select a <strong>Project</strong> profile from the <strong>Watson Home page</strong>.
 </br>The selected <strong>Project Home page</strong> appears.</li>
 <li>On your <strong>Project Home pag</strong>e, select the <strong>Jobs</strong> tab.
 </br>The <strong>Jobs</strong> page appears.</li>

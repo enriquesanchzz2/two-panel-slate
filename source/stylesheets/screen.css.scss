@@ -572,6 +572,10 @@ a{
       background-color: $aside-success-bg;
       color: $aside-success-text;
     }
+
+    code {
+      background-color: $code-annotation-bg;
+    }
   }
 
   aside:before {

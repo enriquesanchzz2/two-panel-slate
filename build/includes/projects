@@ -1,9 +1,9 @@
 <h1 id='projects'>Projects</h1>
-<p>In Jeeves, <strong>Projects</strong> function as profiles for test cases. You can create Projects to group test cases aimed at a specific web page or web app and organize your test cases by Project profile.</p>
+<p>In Watson, <strong>Projects</strong> function as profiles for test cases. You can create Projects to group test cases aimed at a specific web page or web app and organize your test cases by Project profile.</p>
 
-<p>Your Projects are displayed on the Jeeves Home page, organized in a table by date of creation.  To access a Project, click its name, and the Jeeves WebApp will direct you to the Home page of the Project you selected.</p>
+<p>Your Projects are displayed on the Watson Home page, organized in a table by date of creation.  To access a Project, click its name, and the Watson WebApp will direct you to the Home page of the Project you selected.</p>
 
-<aside class="warning">All Jeeves users have access to all Projects created in Jeeves. Only work on the Projects you created to avoid inconsistencies or problems inside other Projects. 
+<aside class="warning">All Watson users have access to all Projects created in Watson. Only work on the Projects you created to avoid inconsistencies or problems inside other Projects. 
 </aside>
 
 <p>This section contains the following topics:</p>
@@ -26,7 +26,7 @@
 <p>To <strong>create a new Project</strong> profile, follow these steps:</p>
 
 <ol>
-<li>Open the <strong>Jeeves WebApp Home page</strong>.</li>
+<li>Open the <strong>Watson WebApp Home page</strong>.</li>
 <li>Click the <strong>+ Create</strong>  button on the upper right corner of the page.
 </br>The <strong>New Project</strong> page appears.</li>
 <li>Enter the name of the new Project in the <strong>Name</strong> field.</li>
@@ -52,7 +52,7 @@
 <h2 id='project-settings'>Project Settings</h2>
 <p>The Project Home page also shows the <strong>Project Settings</strong> option, located on the top right corner of the page. You can identify it by the gear icon. </p>
 
-<p><img src="images/jeeves-project-settings.png" alt="Jeeves Project Settings button screenshot"></p>
+<p><img src="images/watson-project-settings.png" alt="Watson Project Settings button screenshot"></p>
 
 <p>The <strong>Project Settings</strong>  page shows you the available settings to configure the Project profile that you are in. It displays the settings ordered in three tabs:</p>
 
@@ -69,7 +69,7 @@
 <li><p><strong>Other Settings:</strong> Shows other configuration settings for the Project.</p></li>
 </ul>
 
-<p>In the following sections, you can learn more about the different settings available for the Jeeves Projects profiles. </p>
+<p>In the following sections, you can learn more about the different settings available for the Watson Projects profiles. </p>
 
 <ul>
 <li><a href="#change-a-project-detail">Change a Project Detail</a></li>
@@ -83,7 +83,7 @@
 <p>To <strong>change the Project profile details</strong>, follow these steps:</p>
 
 <ol>
-<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+<li>Select a <strong>Project</strong> from the <strong>Watson WebApp Home page</strong>.
 </br>The selected <strong>Project Home</strong> page appears.</li>
 <li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
 </br>The <strong>Project Settings</strong> page appears.</li>
@@ -105,7 +105,7 @@
 <p>To <strong>delete a Project</strong> profile, follow these steps:</p>
 
 <ol>
-<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+<li>Select a <strong>Project</strong> from the <strong>Watson WebApp Home page</strong>.
 </br>The selected <strong>Project Home page</strong> appears.</li>
 <li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
 </br>The <strong>Project Settings</strong> page appears.</li>
@@ -113,7 +113,7 @@
 </br>A checklist with options appears.</li>
 <li>Select the <strong>Delete this Project</strong> option.</li>
 <li>Click the <strong>Ok</strong> button.
-</br>The Project is deleted and the Jeeves WebApp Home page appears..</li>
+</br>The Project is deleted and the Watson WebApp Home page appears..</li>
 </ol>
 
 <aside class="success">After following the preceding steps, you have deleted the Project successfully.
@@ -121,12 +121,12 @@
 
 <p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
 <h3 id='restart-a-project'>Restart a Project</h3>
-<p>When you restart a Project, Jeeves deletes all the Test Cases loaded to the Project without changing the settings of the Project. </p>
+<p>When you restart a Project, Watson deletes all the Test Cases loaded to the Project without changing the settings of the Project. </p>
 
 <p>To <strong>restart a Project</strong>, follow these steps:</p>
 
 <ol>
-<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+<li>Select a <strong>Project</strong> from the <strong>Watson WebApp Home page</strong>.
 </br>The selected <strong>Project Home page</strong> appears.</li>
 <li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
 </br>The <strong>Project Settings</strong> page appears.</li>
@@ -142,7 +142,7 @@
 
 <p><a href="#project-settings" class="go-back"> ← Go back to the Project Settings section </a></p>
 <h3 id='add-integrations-to-a-project'>Add Integrations to a Project</h3>
-<p>Currently, Jeeves integrates with Slack to deliver channel notifications and alerts about the status of a test case run of a specific Project.<br>
+<p>Currently, Watson integrates with Slack to deliver channel notifications and alerts about the status of a test case run of a specific Project.<br>
 To integrate Slack Notifications to a Project, you need to follow these two procedures, which are described in detail in the following sections: </p>
 
 <ol>
@@ -155,7 +155,7 @@ To integrate Slack Notifications to a Project, you need to follow these two proc
 <p>To <strong>create a Slack Channel WebHook</strong> to integrate received notifications in your Slack channel, follow these steps:</p>
 
 <ol>
-<li>Access the <a href="https://dowjones.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks"><strong>Dow Jones Slack Channel Incoming WebHooks</strong></a> page in your browser.
+<li>Access the <a href="https://dowjones.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks"><strong>Good Corp. Slack Channel Incoming WebHooks</strong></a> page in your browser.
 </br>The <strong>Incoming WebHooks</strong> page appears.</li>
 <li>In the <strong>Post to Channel</strong> section, select your channel from the dropdown menu.</li>
 <li>Click the <strong>Add Incoming WebHooks integration</strong> button.
@@ -163,10 +163,10 @@ To integrate Slack Notifications to a Project, you need to follow these two proc
 <li>Save the <strong>WebHook URL</strong> for the following steps.</li>
 </ol>
 
-<aside class="success">After following the preceding steps, you have created the WebHook URL to integrate Jeeves with your Slack channel.
+<aside class="success">After following the preceding steps, you have created the WebHook URL to integrate Watson with your Slack channel.
 </aside>
 
-<p>To integrate Jeeves to your slack channel, see the <a href="#integrate-slack-notifications-to-a-project-profile">Integrate Slack Notifications to a Project Profile</a> section.</p>
+<p>To integrate Watson to your slack channel, see the <a href="#integrate-slack-notifications-to-a-project-profile">Integrate Slack Notifications to a Project Profile</a> section.</p>
 <h4 id='2-integrate-slack-notifications-to-a-project-profile'>2. Integrate Slack Notifications to a Project Profile</h4>
 <p>To <strong>integrate Slack notifications</strong> to a Project profile, follow these steps:</p>
 
@@ -174,7 +174,7 @@ To integrate Slack Notifications to a Project, you need to follow these two proc
 </aside>
 
 <ol>
-<li>Select a <strong>Project</strong> from the <strong>Jeeves WebApp Home page</strong>.
+<li>Select a <strong>Project</strong> from the <strong>Watson WebApp Home page</strong>.
 </br>The selected <strong>Project Home</strong> page appears.</li>
 <li>Click on the <strong>Project Settings</strong> button on the top right corner of the page.
 </br>The <strong>Project Settings</strong> page appears.</li>
@@ -199,7 +199,7 @@ To integrate Slack Notifications to a Project, you need to follow these two proc
 <li><strong>None:</strong> Does not notify when a test case runs.</li>
 </ul></li>
 <li>Click the <strong>Ok</strong> button.
-</br>Jeeves is integrated to your Slack channel. </li>
+</br>Watson is integrated to your Slack channel. </li>
 </ol>
 
 <aside class="success">After integrating Slack notifications to your Slack channel, you will receive the notifications every time the conditions that you configured happen.  

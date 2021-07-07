@@ -1,7 +1,7 @@
 <h1 id='glossary'>Glossary</h1>
-<p>The following table lists the commonly used words while working with Jeeves.</p>
+<p>The following table lists the commonly used words while working with Watson.</p>
 
-<aside class="notice"> This is an evolving section of the document. Words can be added or deleted as Jeeves evolve. 
+<aside class="notice"> This is an evolving section of the document. Words can be added or deleted as Watson evolve. 
 </aside>
 
 <table><thead>
@@ -53,7 +53,7 @@
 </tr>
 <tr>
 <td><strong>DJ</strong></td>
-<td>The acronym for Dow Jones.</td>
+<td>The acronym for Good Corp..</td>
 <td><a href="#version">Version</a></td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@
 </tr>
 <tr>
 <td><strong>DJ Business Unit</strong></td>
-<td>The Dow Jones Business Unit. An internal section of Dow Jones, such as The Wall Street Journal or Barron’s.</td>
+<td>The Good Corp. Business Unit. An internal section of Good Corp., such as The Wall Street Journal or Barron’s.</td>
 <td><a href="#version">Version</a></td>
 </tr>
 <tr>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td><strong>DJ Component</strong></td>
-<td>The Dow Jones Component. An internal section of a DJ Business Unit, such as Shared Services or Data.</td>
+<td>The Good Corp. Component. An internal section of a DJ Business Unit, such as Shared Services or Data.</td>
 <td><a href="#version">Version</a></td>
 </tr>
 <tr>
@@ -83,12 +83,12 @@
 </tr>
 <tr>
 <td><strong>DJ Team</strong></td>
-<td>The Dow Jones Team. An internal section of a DJ Component. DJ Teams focus on specific projects.</td>
+<td>The Good Corp. Team. An internal section of a DJ Component. DJ Teams focus on specific projects.</td>
 <td><a href="#create-a-project">Create a Project</a></td>
 </tr>
 <tr>
 <td><strong>DJ VPN</strong></td>
-<td>The Dow Jones Virtual Protected Network. Necessary to work with Jeeves and Dow Jones services and tools.</td>
+<td>The Good Corp. Virtual Protected Network. Necessary to work with Watson and Good Corp. services and tools.</td>
 <td><a href="#overview">Overview</a></td>
 </tr>
 <tr>
@@ -98,12 +98,12 @@
 </tr>
 <tr>
 <td><strong>Engine</strong></td>
-<td>The hardware and software behind an environment. Jeeves can use Local or AWS engines.</td>
+<td>The hardware and software behind an environment. Watson can use Local or AWS engines.</td>
 <td><a href="#version">Version</a></td>
 </tr>
 <tr>
 <td><strong>Environment</strong></td>
-<td>The state in which Jeeves runs. Jeeves can run in localhost, nonprod, and stag.</td>
+<td>The state in which Watson runs. Watson can run in localhost, nonprod, and stag.</td>
 <td><a href="#version">Version</a></td>
 </tr>
 <tr>
@@ -198,7 +198,7 @@
 </tr>
 <tr>
 <td><strong>Log</strong></td>
-<td>A Terminal-like interface that lists the activities Jeeves does in real-time while running a Test Case or a Job.</td>
+<td>A Terminal-like interface that lists the activities Watson does in real-time while running a Test Case or a Job.</td>
 <td><a href="#test-case-logs">Test Case Logs</a></td>
 </tr>
 <tr>
@@ -223,7 +223,7 @@
 </tr>
 <tr>
 <td><strong>Monitor</strong></td>
-<td>The Jeeves section which enables users to check the progress of Test Cases running in the background.</td>
+<td>The Watson section which enables users to check the progress of Test Cases running in the background.</td>
 <td><a href="#monitor">Monitor</a></td>
 </tr>
 <tr>
@@ -478,7 +478,7 @@
 </tr>
 <tr>
 <td><strong>Version</strong></td>
-<td>The current state of Jeeves, labeled by a sequential number.</td>
+<td>The current state of Watson, labeled by a sequential number.</td>
 <td><a href="#version">Version</a></td>
 </tr>
 <tr>

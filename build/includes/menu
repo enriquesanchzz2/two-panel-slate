@@ -1,5 +1,5 @@
 <h1 id='menu'>Menu</h1>
-<p>The <strong>Jeeves Menu</strong>, located on the top of the page, displays the different sections of the Jeeves WebApp. The menu shows the following options:</p>
+<p>The <strong>Watson Menu</strong>, located on the top of the page, displays the different sections of the Watson WebApp. The menu shows the following options:</p>
 
 <ul>
 <li><a href="#home">Home</a></li>
@@ -8,26 +8,26 @@
 <li><a href="#version">Version</a></li>
 </ul>
 
-<p>The following sections describe in detail each element of the Jeeves Menu.</p>
+<p>The following sections describe in detail each element of the Watson Menu.</p>
 
 <p><a href="#home-page" class="go-back"> ← Go back to the Home Page section </a></p>
 <h2 id='home'>Home</h2>
-<p>The <strong>Home</strong> option of the Jeeves Menu takes you to the Jeeves WebApp Home page. 
-You can also click the Jeeves button to do the same function. </p>
+<p>The <strong>Home</strong> option of the Watson Menu takes you to the Watson WebApp Home page. 
+You can also click the Watson button to do the same function. </p>
 
-<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<p><a href="#menu" class="go-back"> ← Go back to the Watson Menu section </a></p>
 <h2 id='monitor'>Monitor</h2>
-<p>The <strong>Monitor</strong> option of the Jeeves Menu takes you to the Monitor page. The Monitor page shows information about the active and pending simulations happening  in the background of the Jeeves WebApp. The following image shows the Monitor page:</p>
+<p>The <strong>Monitor</strong> option of the Watson Menu takes you to the Monitor page. The Monitor page shows information about the active and pending simulations happening  in the background of the Watson WebApp. The following image shows the Monitor page:</p>
 
 <p></br>
-<img src="images/jeeves-monitor-page.png" alt="Jeeves Monitor page screenshot">
+<img src="images/watson-monitor-page.png" alt="Watson Monitor page screenshot">
 </br>
 </br></p>
 
 <p>The <strong>Monitor</strong> page contains the following two tables:</p>
 
 <ul>
-<li><p><strong>Active Simulations:</strong> Located on the left, it shows the information about the active test cases running on the Jeeves WebApp. It includes the following information:</p>
+<li><p><strong>Active Simulations:</strong> Located on the left, it shows the information about the active test cases running on the Watson WebApp. It includes the following information:</p>
 
 <ul>
 <li><strong>Pool Status:</strong> The percentage of progress of activities completed up to time.</li>
@@ -40,7 +40,7 @@ You can also click the Jeeves button to do the same function. </p>
 </aside>
 
 <p></br></p></li>
-<li><p><strong>Pending Simulations:</strong>Located on the right, it presents the information about the pending simulations to run on the Jeeves WebApp. It includes the following information:</p>
+<li><p><strong>Pending Simulations:</strong>Located on the right, it presents the information about the pending simulations to run on the Watson WebApp. It includes the following information:</p>
 
 <ul>
 <li><strong>Queue Status:</strong> The progress percentage of activities queued that have been achieved up to timeThe percentage of progress of queued activities that have been completed up to time.</li>
@@ -54,14 +54,14 @@ You can also click the Jeeves button to do the same function. </p>
 
 <p></br></p>
 
-<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p></li>
+<p><a href="#menu" class="go-back"> ← Go back to the Watson Menu section </a></p></li>
 </ul>
 <h2 id='user-guide'>User Guide</h2>
-<p>The <strong>User Guide</strong> option of the Jeeves Menu takes you to the Jeeves WebApp User Guide. The User Guide shows you information about how to work with the Jeeves WebApp. Additionally, it shows you how to configure the virtual workspace for the Jeeves WebApp and Jeeves API, as well as the API Reference documentation. </p>
+<p>The <strong>User Guide</strong> option of the Watson Menu takes you to the Watson WebApp User Guide. The User Guide shows you information about how to work with the Watson WebApp. Additionally, it shows you how to configure the virtual workspace for the Watson WebApp and Watson API, as well as the API Reference documentation. </p>
 
-<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<p><a href="#menu" class="go-back"> ← Go back to the Watson Menu section </a></p>
 <h2 id='version'>Version</h2>
-<p>Located in the top-right corner of the page, the <strong>Version</strong> option of the Jeeves Menu takes you to the Instance Details page. The Instance Details page is divided into two sections that show information about the instance:
+<p>Located in the top-right corner of the page, the <strong>Version</strong> option of the Watson Menu takes you to the Instance Details page. The Instance Details page is divided into two sections that show information about the instance:
 </br></p>
 
 <ul>
@@ -87,7 +87,7 @@ You can also click the Jeeves button to do the same function. </p>
 <p></br></p>
 
 <ul>
-<li><strong>Fleet Resources:</strong> Shows the information about the Fleet Request for AWS. Each fleet request contains an N number of Spot instances where Jeeves runs the test cases.  The information presented of each Fleet Request is the following:</li>
+<li><strong>Fleet Resources:</strong> Shows the information about the Fleet Request for AWS. Each fleet request contains an N number of Spot instances where Watson runs the test cases.  The information presented of each Fleet Request is the following:</li>
 </ul>
 
 <table><thead>
@@ -105,7 +105,7 @@ You can also click the Jeeves button to do the same function. </p>
 <tr>
 <td></td>
 <td>bu</td>
-<td>The Dow Jones (DJ) Business Unit of the VPC</td>
+<td>The Good Corp. (DJ) Business Unit of the VPC</td>
 </tr>
 <tr>
 <td></td>
@@ -174,4 +174,4 @@ You can also click the Jeeves button to do the same function. </p>
 </tr>
 </tbody></table>
 
-<p><a href="#menu" class="go-back"> ← Go back to the Jeeves Menu section </a></p>
+<p><a href="#menu" class="go-back"> ← Go back to the Watson Menu section </a></p>

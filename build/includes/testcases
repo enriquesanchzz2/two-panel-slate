@@ -1,5 +1,5 @@
 <h1 id='test-cases'>Test Cases</h1>
-<p>Jeeves Projects contain <strong>Test Cases</strong>. You can create Test Cases to examine the availability and throughput of a website or web application which enables you to look for for features to improve points or bugs to fix. </p>
+<p>Watson Projects contain <strong>Test Cases</strong>. You can create Test Cases to examine the availability and throughput of a website or web application which enables you to look for for features to improve points or bugs to fix. </p>
 
 <p>This section contains you the following information about Test Cases:</p>
 
@@ -25,9 +25,9 @@
 </ul></li>
 </ul>
 <h2 id='test-case-presets'>Test Case Presets</h2>
-<p>When you start to <a href="#create-a-test-case">create a Test Case</a>, Jeeves prompts you to choose a Preset. A <strong>Preset</strong> is a type of prefabricated Test Case configuration, which you can modify to fit your Projects testing needs. </p>
+<p>When you start to <a href="#create-a-test-case">create a Test Case</a>, Watson prompts you to choose a Preset. A <strong>Preset</strong> is a type of prefabricated Test Case configuration, which you can modify to fit your Projects testing needs. </p>
 
-<p>The following table lists the Test Case Presets available in Jeeves:</p>
+<p>The following table lists the Test Case Presets available in Watson:</p>
 
 <table><thead>
 <tr>
@@ -79,7 +79,7 @@
 <p>To create a new <strong>Test Case</strong> for a project profile, follow these steps:</p>
 
 <ol>
-<li>Select a project from the <strong>Jeeves WebApp</strong> home page.
+<li>Select a project from the <strong>Watson WebApp</strong> home page.
 </br>The selected project home page appears.</li>
 <li>Select the <strong>Test Cases</strong> tab.</li>
 <li>Click the <strong>+ Create</strong> button in the top left corner of the <strong>Test Cases</strong> tab.
@@ -317,7 +317,7 @@ To learn how to configure your Test Case, see the <a href="#test-case-settings">
 </br>A dropdown menu with the Preset options appears.</li>
 <li>Select the new <strong>Preset</strong> configuration for your Test Case.</li>
 <li>Click the <strong>Ok</strong> Button.
-</br>Jeeves loads the default settings of the new Preset.</li>
+</br>Watson loads the default settings of the new Preset.</li>
 </ol>
 
 <aside class="success">After following the preceding steps, you have changed your Test Case Preset successfully. 
@@ -503,7 +503,7 @@ The following table lists the available parameters of the Config JSON file:</p>
 
 <p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
 <h4 id='headers'>Headers</h4>
-<p>The <strong>Headers</strong> section of the Run Parameters shows the JSON file with the HTTP Headers needed to run the Test Case. Headers let Jeeves and the web server pass additional information with an HTTP Request or Response. The following table lists the parameters of the Headers JSON file:</p>
+<p>The <strong>Headers</strong> section of the Run Parameters shows the JSON file with the HTTP Headers needed to run the Test Case. Headers let Watson and the web server pass additional information with an HTTP Request or Response. The following table lists the parameters of the Headers JSON file:</p>
 
 <table><thead>
 <tr>
@@ -651,7 +651,7 @@ The following table lists the available parameters of the Config JSON file:</p>
 
 <p><a href="#run-parameters" class="go-back"> ← Go back to the Run Parameters section </a></p>
 <h5 id='path-and-query-parameters'>Path and Query Parameters</h5>
-<p>The <strong>Path and Query parameters</strong> enable Jeeves to change a part of the Target URL to access sections of the Web page or Web App to test with a Test Case.  Path and Query parameters are defined in the URL, but they have different structure and objective:</p>
+<p>The <strong>Path and Query parameters</strong> enable Watson to change a part of the Target URL to access sections of the Web page or Web App to test with a Test Case.  Path and Query parameters are defined in the URL, but they have different structure and objective:</p>
 
 <ul>
 <li><strong>Path parameters:</strong> Enable developers to identify a specific item from a resource. </li>
@@ -669,7 +669,7 @@ The following table lists the available parameters of the Config JSON file:</p>
 
 <p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
 <h6 id='dynamic-target-url'>Dynamic Target URL</h6>
-<p>Jeeves uses String Interpolation to change the Path or Query parameters in the <strong>Dynamic Target URL</strong> with the values defined in the Dynamic Values JSON File. To achieve this, Jeeves defines the path and query parameters on the Target URL by using the following structure:</p>
+<p>Watson uses String Interpolation to change the Path or Query parameters in the <strong>Dynamic Target URL</strong> with the values defined in the Dynamic Values JSON File. To achieve this, Watson defines the path and query parameters on the Target URL by using the following structure:</p>
 
 <p>This is an example of a Path parameter:</p>
 <div class="highlight"><pre class="highlight plaintext"><code>/${path-parameter}/
@@ -849,7 +849,7 @@ The following table lists the available parameters of the Config JSON file:</p>
 
 <p><a href="#dynamic-run-parameters" class="go-back"> ← Go back to the Dynamic Run Parameters section </a></p>
 <h6 id='default-headers'>Default Headers</h6>
-<p>The <strong>Default Headers</strong> section shows the JSON file with the HTTP Headers needed to run the Test Case. Headers let the Jeeves and the web server pass additional information with an HTTP Request or Response. The following table lists the parameters of the Default Headers JSON file:</p>
+<p>The <strong>Default Headers</strong> section shows the JSON file with the HTTP Headers needed to run the Test Case. Headers let the Watson and the web server pass additional information with an HTTP Request or Response. The following table lists the parameters of the Default Headers JSON file:</p>
 
 <table><thead>
 <tr>
@@ -1222,12 +1222,12 @@ The following table lists the available parameters of the Config JSON file:</p>
 
 <p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home Page section </a></p>
 <h4 id='initializing'>Initializing</h4>
-<p>When you run a Test Case, Jeeves starts the following three activities:</p>
+<p>When you run a Test Case, Watson starts the following three activities:</p>
 
 <ol>
-<li><strong>Execute Run Command:</strong> Jeeves starts the Run command. The Run command launches a series of background activities to create the Simulation Work of the Test Case.</li>
-<li><strong>Create the Simulation Work:</strong> Jeeves creates the Simulation Work for the Test Case. Jeeves takes the Project and Test Case parameters to create the Simulation Work.</li>
-<li><strong>Running the Simulation Work:</strong> Jeeves runs the Simulation Work created in the preceding step. Once the Simulation Work is running without problems, the Test Case iterations start running.</li>
+<li><strong>Execute Run Command:</strong> Watson starts the Run command. The Run command launches a series of background activities to create the Simulation Work of the Test Case.</li>
+<li><strong>Create the Simulation Work:</strong> Watson creates the Simulation Work for the Test Case. Watson takes the Project and Test Case parameters to create the Simulation Work.</li>
+<li><strong>Running the Simulation Work:</strong> Watson runs the Simulation Work created in the preceding step. Once the Simulation Work is running without problems, the Test Case iterations start running.</li>
 </ol>
 
 <p>The following script is an example of how the Initializing section appears in the Logs:</p>
@@ -1252,7 +1252,7 @@ Tue Jun 01 17:37:53 UTC 2021 [SIMULATION WORKER] [SIMULATION WORKER] Still alive
 
 <p><a href="#test-case-logs" class="go-back"> ← Go back to the Test Case Logs section </a></p>
 <h4 id='running'>Running</h4>
-<p>Once Jeeves created the Simulation Work with the Project and Test Case parameters, the Test Case Simulation Work starts. Jeeves creates reports with the Test Case run health every five seconds. The reports include the following information:</p>
+<p>Once Watson created the Simulation Work with the Project and Test Case parameters, the Test Case Simulation Work starts. Watson creates reports with the Test Case run health every five seconds. The reports include the following information:</p>
 
 <ul>
 <li><strong>Timestamp:</strong> The Timestamp shows the time when the log is registered, along with the seconds that have passed since the beginning of the simulation. </li>
@@ -1285,7 +1285,7 @@ Tue Jun 01 17:37:53 UTC 2021 [SIMULATION WORKER] [SIMULATION WORKER] Still alive
 
 <p><a href="#test-case-logs" class="go-back"> ← Go back to the Test Case Logs section </a></p>
 <h4 id='finalizing'>Finalizing</h4>
-<p>Once Jeeves completed the total amount of requests in the Simulation Work, the Log presents the results obtained. The following list shows the information registered in this section of the Log, where the parameters show the Total Amount of Request per category, along with the Amount of Succeeded Request (OK) and the Amount of Failed Request (KO) per category:</p>
+<p>Once Watson completed the total amount of requests in the Simulation Work, the Log presents the results obtained. The following list shows the information registered in this section of the Log, where the parameters show the Total Amount of Request per category, along with the Amount of Succeeded Request (OK) and the Amount of Failed Request (KO) per category:</p>
 
 <ul>
 <li><strong>Time taken to complete:</strong> the time that the Simulation Work took to complete the requests. </li>
@@ -1384,11 +1384,11 @@ SLF4J: See http://www.slf4j.org/codes.html#version_mismatch for further details.
 
 <p><img src="images/test-case-insights.png" alt="Test Case Insights screenshot"></p>
 
-<p>To learn how to interpret the reports that Jeeves creates after each Test Case run, see the <a href="#test-case-reports">Test Cases Reports</a> section.</p>
+<p>To learn how to interpret the reports that Watson creates after each Test Case run, see the <a href="#test-case-reports">Test Cases Reports</a> section.</p>
 
 <p><a href="#test-case-home-page" class="go-back"> ← Go back to the Test Case Home Page section </a></p>
 <h3 id='test-case-reports'>Test Case Reports</h3>
-<p>Jeeves is built over the <a href="https://gatling.io/docs/current/">Gatling Open Source Library</a>. Gatling helps Jeeves to create the reports and charts to show the results obtained during the Test Case Run. When a Test Case run is completed, Jeeves and Gatling create a report page, you can check all the reports from previous Test Case Runs ordered by date in the <strong>Reports</strong> section of a Test Case Home page. </p>
+<p>Watson is built over the <a href="https://gatling.io/docs/current/">Gatling Open Source Library</a>. Gatling helps Watson to create the reports and charts to show the results obtained during the Test Case Run. When a Test Case run is completed, Watson and Gatling create a report page, you can check all the reports from previous Test Case Runs ordered by date in the <strong>Reports</strong> section of a Test Case Home page. </p>
 
 <p>To open a <strong>Report</strong>, follow these steps:</p>
 
