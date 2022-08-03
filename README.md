@@ -1,6 +1,6 @@
-# Wizeline Two-panel Slate Template
+#Two-panel Slate Template
 
-Welcome to the Wizeline Two-panel Slate Template. A template based on the [Official Dracula Slate Template](https://github.com/dracula/slate).
+Welcome to the Two-panel Slate Template. A template based on the [Official Dracula Slate Template](https://github.com/dracula/slate).
 Use this template to create a static site for documentation such as:
 
 * User Guides
